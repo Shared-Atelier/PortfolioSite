@@ -317,6 +317,8 @@ body {
 }
 .contact-form-wrapper .modal #contact-form #modal-close {
   text-align: right;
+  margin-right: 10px;
+  cursor: pointer;
 }
 .contact-form-wrapper .modal #contact-form > h2 {
   color: #5f5d60;
