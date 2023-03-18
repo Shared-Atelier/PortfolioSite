@@ -8,18 +8,16 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
             <!--CSS -->
             <link rel="stylesheet" href="{{ asset('/css/app.css') }}" type="text/css">
+            <!-- jQuery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         </head>
         <body>
             @include('commons.header')
             @yield('content')
             @include('commons.footer')
-            <!-- JQuery -->
-            <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-            <!-- Bootstrap tooltips -->
-            <script type="text/javascript" src="js/tether.min.js"></script>
-            <!-- Bootstrap core JavaScript -->
-            <script type="text/javascript" src="js/bootstrap.min.js"></script>
-            <!-- MDB core  JavaScript -->
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
+            <!-- Scripts -->
+            <script src="{{ asset('js/app.js') }}"></script>
+            <!-- jQuery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         </body>
     </html>

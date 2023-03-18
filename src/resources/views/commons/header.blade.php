@@ -1,21 +1,22 @@
-<nav class="">
-<a class="" href="#"><img src="{{ asset('img/logo.png') }}" alt="" class="menu__logo"></i>
+<nav class="header">
+    <a class="header__logo" href="{{ asset('/') }}">
+        <img src="{{ asset('img/logo.png') }}" alt="" class="logo">
     </a>
-    <div class="menu">
-        <ul class="menu__list">
-            <li class="menu__text">
-                <a class="" href="#">
+    <div class="header__menu">
+        <ul class="header__menu-list">
+            <li class="header__menu-text">
+                <a class="" href="#about">
                     About
                 </a>
             </li>
-            <li class="menu__text">
-                <a class="" href="#">
+            <li class="header__menu-text">
+                <a class="" href="#works">
                     Works
                 </a>
             </li>
-            <li class="menu__text">
-                <a class="" href="">
-                    Contacts
+            <li class="header__menu-text">
+                <a class="" href="#contact">
+                    Contact
                 </a>
             </li>
         </ul>
