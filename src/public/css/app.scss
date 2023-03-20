@@ -6,11 +6,17 @@
  * @version: 1.0.0
  */
 
-.body {
-  background-color: #fcfaf6;
+html {
+  scroll-behavior: smooth;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-// header //
+body {
+  background-color: #fcfaf6;
+  margin: 0px;
+}
+
+// Header //
 
 .header {
   position: fixed;
@@ -20,22 +26,19 @@
   width: 100%;
   background-color: rgb(252, 250, 246, 0.8);
   height: 65px;
-  
+  font-family: 'Courier New', Courier, monospace;
   padding-top: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  // position: relative;
 
   &__logo {
     .logo {
       height: 65px;
       margin: 10px 80px;
-      // float: left;
     }
   }
   
-
   &__menu {
     position: absolute;
     right : 0;
@@ -60,251 +63,41 @@
   }
 }
 
-// end header //
+// END Header //
 
 
-// index_mv //
+// Hero //
 
-// carousel >>
+.container-top {
 
- %animation-default {
-    opacity: 1 !important;
-    z-index: 3;
-  }
-  
-  @mixin carousel($items, $animation: 'default') {
-    .carousel {
-      width: 100%;
-      position: relative;
-      overflow: hidden;
-  
-      > input[type="radio"] {
-        position: absolute;
-        left: 0;
-        opacity: 0;
-        top: 0;
-  
-        &:checked {
-          ~ .carousel__items .carousel__item,
-          ~ .carousel__prev > label,
-          ~ .carousel__next > label {
-            opacity: 0;
-          }
-        }
-  
-        @for $i from 1 through $items {
-          &:nth-child(#{$i}) {
-            &:checked {
-              ~ .carousel__items .carousel__item {
-                @if $animation == 'default' {
-                  &:nth-child(#{$i}) {
-                    opacity: 1;
-                  }
-                }
-              }
-  
-              ~ .carousel__prev {
-                > label {
-                  @if $i == 1 {
-                    &:nth-child(#{$items}) {
-                      @extend %animation-default;
-                    }
-                  } @else if $i == $items {
-                    &:nth-child(#{$items - 1}) {
-                      @extend %animation-default;
-                    }
-                  } @else {
-                    &:nth-child(#{$i - 1}) {
-                      @extend %animation-default;
-                    }
-                  }
-                }
-              }
-  
-              ~ .carousel__next {
-                > label {
-                  @if $i == $items {
-                    &:nth-child(1) {
-                      @extend %animation-default;
-                    }
-                  } @else {
-                    &:nth-child(#{$i + 1}) {
-                      @extend %animation-default;
-                    }
-                  }
-                }
-              }
-  
-              ~ .carousel__nav {
-                > label {
-                  &:nth-child(#{$i}) {
-                    background: #FCFAF6;
-                    cursor: default;
-                    pointer-events: none;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-  
-      &__items {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        width: 100%;
-        position: relative;
-      }
-  
-      &__item {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        transition: opacity 2s;
-        -webkit-transition: opacity 2s;
-  
-        img {
-          width: 100%;
-          height: 100%;
-          vertical-align: middle;
-        }
-      }
-  
-      &__prev,
-      &__next {
-        > label {
-          border: 1px solid #FCFAF6;
-          border-radius: 50%;
-          cursor: pointer;
-          display: block;
-          width: 40px;
-          height: 40px;
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          -webkit-transform: translateY(-50%);
-          transition: all .3s ease;
-          -webkit-transition: all .3s ease;
-          opacity: 0;
-          z-index: 2;
-  
-          &:hover,
-          &:focus {
-            opacity: .5 !important;
-          }
-  
-          &:before,
-          &:after {
-            content: "";
-            position: absolute;
-            width: inherit;
-            height: inherit;
-          }
-  
-          &:before {
-            background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%),
-                        linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
-            width: 60%;
-            height: 60%;
-            top: 20%;
-          }
-        }
-      }
-  
-      &__prev {
-        > label {
-          left: 2%;
-  
-          &:before {
-            left: 35%;
-            top: 20%;
-            transform: rotate(135deg);
-            -webkit-transform: rotate(135deg);
-          }
-        }
-      }
-  
-      &__next {
-        > label {
-          right: 2%;
-  
-          &:before {
-            left: 10%;
-            transform: rotate(315deg);
-            -webkit-transform: rotate(315deg);
-          }
-        }
-      }
-  
-      &__nav {
-        position: absolute;
-        bottom: 3%;
-        left: 0;
-        text-align: center;
-        width: 100%;
-        z-index: 3;
-  
-        > label {
-          border: 1px solid #303030;
-          display: inline-block;
-          border-radius: 50%;
-          cursor: pointer;
-          margin: 0 .125%;
-          width: 10px;
-          height: 10px;
-        }
-      }
-    }
-  }
-   
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-  }
-  
-  body {
-    background: #FCFAF6;
-    margin: 0;
-  }
-  
-  .container {
+  margin-top: 120px;
+
+  img {
     width: 100%;
-    min-width: 900px;
-    margin-top: 90px;
-    margin-bottom: 90px;
   }
-  
-  @include carousel(3);
-
-  // >> end carousel
-
-  // end index_mv //
+}
+// END Hero //
 
 
-  // About //
+// About //
 
   .container-about {
 
-    // background-color: aquamarine;
-    width: 100%;
+    margin-top: 100px;
+    background-color: #fcfaf6;
     height: 100%;
-    padding: 5% 20% 10% 20%; //上左下右
+    // padding: 5% 20% 10% 20%;
 
     > h3 {
       color: #303030;
       text-align: left;
+      margin-left: 20%;
     }
 
     .wrapper-about {
+      margin-right: 20%;
+      margin-left: 20%;
       border: 1px solid #303030;
-      width: 100%;
       height: 80%;
       color: #303030;
       display: flex;
@@ -324,59 +117,60 @@
     }
   }
 
-  // end About //
+// END About //
 
 
-  // Works //
+// Works //
 
   .container-works {
-    background-color: #e5e5e5; // test
-    width: 100%;
+    background-color: #fcfaf6;
     height: 100%;
-    padding: 10% 30% 10% 30%;
+    width: 100%;
+    margin-top: 200px;
 
     > h3 {
       color: #303030;
       text-align: center;
     }
 
-  // carousel >>
+// carousel >>
 
-  #carousel3d{
-    .carousel-3d-slide{
-      display: flex;
-      flex:1;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      background-color: #fff;
-      padding: 10px;
-      transition: all .4s;
-      &.current{
-        background-color: #333;
-        color: #fff;
-        span{
-          font-size: 20px;
-          font-weight: 500;
+    .swiper {
+      width: 100%;
+      height: auto;
+
+
+      .swiper-slide {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #303030;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+
+        img {
+          border-radius: 10% / 15%;
         }
       }
     }
+
+// >> END carousel
+
   }
 
-  // >> end carousel
-
-  }
-
-  // end Works //
+// END Works //
 
 
-  // Contact //
+// Contact //
 
   .container-contact {
-    // background-color: #a86363; // test
-    width: 100%;
+    background-color: #fcfaf6;
     height: 100%;
-    padding: 10% 30% 10% 30%;
+    margin-top: 150px;
+    margin-bottom: 300px;
+    // padding: 10% 30% 10% 30%;
     text-align: center;
 
     > h3 {
@@ -392,7 +186,7 @@
       border: none;
       border-radius: 3px;
       color: white;
-      margin: 10px auto;
+      margin-top: 50px;
       cursor: pointer;
 
       &:hover {
@@ -436,8 +230,10 @@
       #contact-form {
         width: 100%;
 
-        #modal-close {
-          text-align: right;
+        .close {
+          text-align:right;
+          width: 20px;
+          margin-top: 10px;
           margin-right: 10px;
           cursor: pointer;
         }
@@ -445,12 +241,24 @@
         > h2 {
           color: #5f5d60;
           letter-spacing: 1px;
-          margin-bottom: 40px;
+          margin-bottom: 25px;
         }
 
-        ~ input {
-          width: 320px;
-          margin-bottom: 20px;
+        .form-email {
+          width: 400px;
+          margin-bottom: 15px;
+          font-size: 12px;
+          padding: 12px 12px;
+          border: 1px solid #d0d5d8;
+          border-radius: 5px;
+        }
+
+        .form-text {
+          vertical-align: top;
+          width: 400px;
+          height: 100px;
+          resize: none;
+          margin-bottom: 30px;
           font-size: 12px;
           padding: 12px 12px;
           border: 1px solid #d0d5d8;
@@ -475,13 +283,15 @@
     }
   }
 
-  // end Contact //
+// END Contact //
 
 
-  // footer //
+// Footer //
 
   .container {
     &-footer {
+      background-color: #fcfaf6;
+
       &-text {
         > p {
           text-align: center;
@@ -491,4 +301,4 @@
     }
   }
 
-  // end footer //
+// END Footer //

@@ -2,32 +2,8 @@
 
 @section('content')
 
-<div class="container">
-  <div class="carousel">
-    <input type="radio" id="carousel-1" name="carousel[]" checked>
-    <input type="radio" id="carousel-2" name="carousel[]">
-    <input type="radio" id="carousel-3" name="carousel[]">
-    <ul class="carousel__items">
-      <li class="carousel__item"><img src="{{ asset('img/top_mv_1.png') }}" alt=""></li>
-      <li class="carousel__item"><img src="{{ asset('img/top_mv_2.png') }}" alt=""></li>
-      <li class="carousel__item"><img src="{{ asset('img/top_mv_3.png') }}" alt=""></li>
-    </ul>
-     <div class="carousel__prev">
-      <label for="carousel-1"></label>
-      <label for="carousel-2"></label>
-      <label for="carousel-3"></label>
-     </div>
-     <div class="carousel__next">
-       <label for="carousel-1"></label>
-       <label for="carousel-2"></label>
-       <label for="carousel-3"></label>
-     </div>
-     <div class="carousel__nav">
-       <label for="carousel-1"></label>
-       <label for="carousel-2"></label>
-       <label for="carousel-3"></label>
-     </div>
-   </div>
+ <div class="container-top">
+  <img src="{{ asset('/img/top_mv_1.png') }}" alt="">
  </div>
 
  <div class="container-about" id="about">
@@ -58,22 +34,35 @@
 
  <div class="container-works" id="works">
   <h3>Works</h3>
-  <div id="carousel3d">
-  <carousel-3d :perspective="0" :space="200" :display="5" :controls-visible="true" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" :clickable="true" :autoplay="true" :autoplay-timeout="5000">
-    <slide :index="0">
-      <img src="{{ asset('img/top_works_1.png') }}" alt="">
-    </slide>
-    <slide :index="1">
-        <img src="{{ asset('img/top_works_2.png') }}" alt="">
-    </slide>
-    <slide :index="2">
-      <img src="{{ asset('img/top_works_3.png') }}" alt="">
-    </slide>
-    <slide :index="3">
-      <img src="{{ asset('img/top_works_4.png') }}" alt="">
-    </slide>
-  </carousel-3d>
+  <div class='card01 l-section'>
+    <div class='l-inner'>
+
+    <div class='swiper-area'>
+      <div class='swiper swiper-works'>
+        <div class='swiper-wrapper'>
+          <div class='swiper-slide'><img src="{{ asset('/img/top_works_1.jpg') }}" alt=""></div>
+          <div class='swiper-slide'><img src="{{ asset('/img/top_works_2.jpg') }}" alt=""></div>
+          <div class='swiper-slide'><img src="{{ asset('/img/top_works_3.jpg') }}" alt=""></div>
+          <div class='swiper-slide'><img src="{{ asset('/img/top_works_4.jpg') }}" alt=""></div>
+          <div class='swiper-slide'><img src="{{ asset('/img/top_works_5.jpg') }}" alt=""></div>
+          <div class='swiper-slide'><img src="{{ asset('/img/top_works_6.jpg') }}" alt=""></div>
+          <div class='swiper-slide'><img src="{{ asset('/img/top_works_7.jpg') }}" alt=""></div>
+          <div class='swiper-slide'><img src="{{ asset('/img/top_works_8.jpg') }}" alt=""></div>
+          <div class='swiper-slide'><img src="{{ asset('/img/top_works_9.jpg') }}" alt=""></div>
+          <div class='swiper-slide'><img src="{{ asset('/img/top_works_10.jpg') }}" alt=""></div>
+          <div class='swiper-slide'><img src="{{ asset('/img/top_works_11.jpg') }}" alt=""></div>
+          <div class='swiper-slide'><img src="{{ asset('/img/top_works_12.jpg') }}" alt=""></div>
+          <div class='swiper-slide'><img src="{{ asset('/img/top_works_13.jpg') }}" alt=""></div>
+          <div class='swiper-slide'><img src="{{ asset('/img/top_works_14.jpg') }}" alt=""></div>
+        </div>
+        <div class='swiper-pagination'></div>
+        <div class='swiper-button-prev'><img src="{{ asset('arrow-left.png') }}" alt=""></div>
+        <div class='swiper-button-next'><img src="{{ asset('arrow-right.png') }}" alt=""></div>
+      </div>
+      
+    </div>
   </div>
+  
  </div>
 
  <div class="container-contact" id="contact">
@@ -82,11 +71,11 @@
   <div class='contact-form-wrapper' id='contact-modal'>
     <div class='modal'>
       <div id='contact-form'>
-        <button id='modal-close'>×</button>
+        <img class='close' id='modal-close' src="{{ asset('/img/cross.png') }}" alt="">
         <h2>Contactフォーム</h2>
         <form action="#">
-          <input class='form-control' type="email" placeholder='メールアドレス'>
-          <input class='form-control' type="text" placeholder='お問合せ内容'>
+          <input class='form-control, form-email' type="email" placeholder='メールアドレス'>
+          <textarea class='form-control, form-text' type="text" placeholder='お問合せ内容'></textarea>
           <div id='submit-btn'>送信</div>
         </form>
       </div>
