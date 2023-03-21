@@ -1,0 +1,326 @@
+/**
+ * Carousel.sass
+ * @author: Dang Van Thanh
+ * @github: https://github.com/dangvanthanh/carousel.sass
+ * @description: A Simple Carousel Pure CSS Using Sass
+ * @version: 1.0.0
+ */
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: #fcfaf6;
+  margin: 0px;
+}
+
+// Header //
+
+.header {
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(252, 250, 246, 0.8);
+  height: 65px;
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  &__logo {
+    .logo {
+      height: 65px;
+      margin: 10px 80px;
+    }
+  }
+  
+  &__menu {
+    position: absolute;
+    right : 0;
+    margin-right: 80px;
+  
+    &-list {
+      text-align: right;
+      margin-right: 0px;
+    }
+
+    &-text {
+      display: inline-block;
+      list-style: none;
+      margin-left: 40px;
+
+      a {
+        color: #303030;
+        text-decoration: none;
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+// END Header //
+
+
+// Hero //
+
+.container-top {
+
+  margin-top: 120px;
+
+  img {
+    width: 100%;
+  }
+}
+// END Hero //
+
+
+// About //
+
+  .container-about {
+
+    margin-top: 100px;
+    background-color: #fcfaf6;
+    height: 100%;
+    // padding: 5% 20% 10% 20%;
+
+    > h3 {
+      color: #303030;
+      text-align: left;
+      margin-left: 20%;
+    }
+
+    .wrapper-about {
+      margin-right: 20%;
+      margin-left: 20%;
+      border: 1px solid #303030;
+      height: 80%;
+      color: #303030;
+      display: flex;
+      align-items: center;
+      padding: 30px;
+
+      h5 {
+        color: #303030;
+        display: inline;
+      }
+
+      ~ p {
+        color: #303030;
+        display: inline;
+        font-size: 14px;
+      }
+    }
+  }
+
+// END About //
+
+
+// Works //
+
+  .container-works {
+    background-color: #fcfaf6;
+    height: 100%;
+    width: 100%;
+    margin-top: 200px;
+
+    > h3 {
+      color: #303030;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+// carousel >>
+
+    .swiper-area {
+      overflow: hidden;
+      margin-inline: auto;
+      margin-left: 120px;
+      // max-width: 100%;
+      position: relative;
+
+      .swiper-pagination {
+        margin-top: -100px;
+        width: 20%;
+        text-align: left;
+        margin-left: 120px;
+      }
+
+      .swiper {
+        padding-top: 16px;
+        height: auto;
+        overflow: hidden;
+
+        .swiper-wrapper {
+          width: 450px;
+          margin-right: 0;
+        }
+  
+        .swiper-slide {
+          // width: 100%;
+          height: 100%;
+          transition: all 0.5s;
+          
+          &:hover {
+            transform: translateY(-16px);
+          }
+  
+          img {
+            border-radius: 3% / 5%;
+          }
+        }
+      }
+    }
+
+
+
+// >> END carousel
+
+  }
+
+// END Works //
+
+
+// Contact //
+
+  .container-contact {
+    background-color: #fcfaf6;
+    height: 100%;
+    margin-top: 150px;
+    margin-bottom: 300px;
+    // padding: 10% 30% 10% 30%;
+    text-align: center;
+
+    > h3 {
+      color: #303030;
+      text-align: center;
+    }
+
+    > button {
+      display: inline-block;
+      text-align: center;
+      padding: 14px 80px;
+      background-color: #5dca88;
+      border: none;
+      border-radius: 3px;
+      color: white;
+      margin-top: 50px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      #modal-overlay {
+        z-index: 1;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        background-color: rgba(0,0,0,0.75);
+      }
+    }
+  }
+
+  .contact-form-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+
+    .modal {
+      position: absolute;
+      top: 20%;
+      left: 34%;
+      background-color: #e6ecf0;
+      padding: 20px 0 40px;
+      border-radius: 10px;
+      width: 450px;
+      height: auto;
+      text-align: center;
+
+      #contact-form {
+        width: 100%;
+
+        .close {
+          text-align:right;
+          width: 20px;
+          margin-top: 10px;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+
+        > h2 {
+          color: #5f5d60;
+          letter-spacing: 1px;
+          margin-bottom: 25px;
+        }
+
+        .form-email {
+          width: 400px;
+          margin-bottom: 15px;
+          font-size: 12px;
+          padding: 12px 12px;
+          border: 1px solid #d0d5d8;
+          border-radius: 5px;
+        }
+
+        .form-text {
+          vertical-align: top;
+          width: 400px;
+          height: 100px;
+          resize: none;
+          margin-bottom: 30px;
+          font-size: 12px;
+          padding: 12px 12px;
+          border: 1px solid #d0d5d8;
+          border-radius: 5px;
+        }
+
+        #submit-btn {
+          display: inline-block;
+          padding: 14px 140px;
+          background-color: #5dca88;
+          border: none;
+          border-radius: 3px;
+          color: white;
+          margin: 10px auto;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+
+// END Contact //
+
+
+// Footer //
+
+  .container {
+    &-footer {
+      background-color: #fcfaf6;
+
+      &-text {
+        > p {
+          text-align: center;
+          color: #303030;
+        }
+      }
+    }
+  }
+
+// END Footer //
