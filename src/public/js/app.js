@@ -5,8 +5,19 @@
 // const swiper = new Swiper('.swiper-works', { //方言
 let mySwiper = new Swiper ('.swiper-works',{
   loop: true,                       //ループ再生
-  autoplay: {                       //自動再生
-    delay: 5000,
+  speed: 1000,
+  effect: 'slide',
+  slidesPerView: auto,
+  spaceBetween: 40,
+  breakpoints: {
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    1025: {
+      slidesPerView: 4,
+      spaceBetween: 32,
+    }
   },
   pagination: {                     //ページネーション(プログレスバー)
     el: '.swiper-pagination',
@@ -17,11 +28,6 @@ let mySwiper = new Swiper ('.swiper-works',{
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
-  speed: 1000,
-  effect: 'slide',
-  slidesPerView: 2.5,
-  spaceBetween: 40,
 });
 
 

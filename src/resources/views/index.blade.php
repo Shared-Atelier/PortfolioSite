@@ -46,20 +46,11 @@
           <div class='swiper-slide'><img src="{{ asset('/img/top_works_4.jpg') }}" alt=""></div>
           <div class='swiper-slide'><img src="{{ asset('/img/top_works_5.jpg') }}" alt=""></div>
           <div class='swiper-slide'><img src="{{ asset('/img/top_works_6.jpg') }}" alt=""></div>
-          <div class='swiper-slide'><img src="{{ asset('/img/top_works_7.jpg') }}" alt=""></div>
-          <div class='swiper-slide'><img src="{{ asset('/img/top_works_8.jpg') }}" alt=""></div>
-          <div class='swiper-slide'><img src="{{ asset('/img/top_works_9.jpg') }}" alt=""></div>
-          <div class='swiper-slide'><img src="{{ asset('/img/top_works_10.jpg') }}" alt=""></div>
-          <div class='swiper-slide'><img src="{{ asset('/img/top_works_11.jpg') }}" alt=""></div>
-          <div class='swiper-slide'><img src="{{ asset('/img/top_works_12.jpg') }}" alt=""></div>
-          <div class='swiper-slide'><img src="{{ asset('/img/top_works_13.jpg') }}" alt=""></div>
-          <div class='swiper-slide'><img src="{{ asset('/img/top_works_14.jpg') }}" alt=""></div>
         </div>
-        <div class='swiper-pagination'></div>
-        <div class='swiper-button-prev'><img src="{{ asset('arrow-left.png') }}" alt=""></div>
-        <div class='swiper-button-next'><img src="{{ asset('arrow-right.png') }}" alt=""></div>
       </div>
-      
+      <div class='swiper-pagination'></div>
+      <div class='swiper-button-prev'><img src="{{ asset('arrow-left.png') }}" alt=""></div>
+      <div class='swiper-button-next'><img src="{{ asset('arrow-right.png') }}" alt=""></div>
     </div>
   </div>
   

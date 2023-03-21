@@ -99,23 +99,38 @@ body {
 .container-works > h3 {
   color: #303030;
   text-align: center;
+  margin-bottom: 100px;
 }
-.container-works .swiper {
-  width: 100%;
+.container-works .swiper-area {
+  overflow: hidden;
+  margin-inline: auto;
+  margin-left: 120px;
+  position: relative;
+}
+.container-works .swiper-area .swiper-pagination {
+  margin-top: -100px;
+  width: 20%;
+  text-align: left;
+  margin-left: 120px;
+}
+.container-works .swiper-area .swiper {
+  padding-top: 16px;
   height: auto;
+  overflow: hidden;
 }
-.container-works .swiper .swiper-slide {
-  width: 100%;
+.container-works .swiper-area .swiper .swiper-wrapper {
+  width: 450px;
+  margin-right: 0;
+}
+.container-works .swiper-area .swiper .swiper-slide {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #303030;
-  font-weight: bold;
-  font-family: "Courier New", Courier, monospace;
+  transition: all 0.5s;
 }
-.container-works .swiper .swiper-slide img {
-  border-radius: 10%/15%;
+.container-works .swiper-area .swiper .swiper-slide:hover {
+  transform: translateY(-16px);
+}
+.container-works .swiper-area .swiper .swiper-slide img {
+  border-radius: 3%/5%;
 }
 
 .container-contact {
