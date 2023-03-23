@@ -102,21 +102,13 @@ body {
   margin-bottom: 100px;
 }
 .container-works .swiper-area {
-  overflow: hidden;
   margin-inline: auto;
   margin-left: 120px;
   position: relative;
 }
-.container-works .swiper-area .swiper-pagination {
-  margin-top: -100px;
-  width: 20%;
-  text-align: left;
-  margin-left: 120px;
-}
 .container-works .swiper-area .swiper {
   padding-top: 16px;
   height: auto;
-  overflow: hidden;
 }
 .container-works .swiper-area .swiper .swiper-wrapper {
   width: 450px;
@@ -131,6 +123,18 @@ body {
 }
 .container-works .swiper-area .swiper .swiper-slide img {
   border-radius: 3%/5%;
+}
+.container-works .swiper-area .swiper .swiper-pagination-progressbar {
+  height: 3px;
+  width: 300px;
+  border-radius: 5px;
+}
+.container-works .swiper-area .swiper .swiper-pagination-progressbar {
+  background: rgba(255, 255, 255, 0.5);
+}
+.container-works .swiper-area .swiper .swiper-pagination-progressbar-fill {
+  border-radius: 5px;
+  background: red;
 }
 
 .container-contact {

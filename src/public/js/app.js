@@ -7,9 +7,8 @@ let mySwiper = new Swiper ('.swiper-works',{
   loop: true,                       //ループ再生
   speed: 1000,
   effect: 'slide',
-  slidesPerView: auto,
-  spaceBetween: 40,
-  slidesOffsetBefore: 40,
+  slidesPerView: 'auto',
+  spaceBetween: 20,
   pagination: {                     //ページネーション(プログレスバー)
     el: '.swiper-pagination',
     type: 'progressbar',
