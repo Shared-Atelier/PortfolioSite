@@ -127,6 +127,7 @@ body {
     height: 100%;
     width: 100%;
     margin-top: 200px;
+    position: relative;
 
     > h3 {
       color: #303030;
@@ -135,15 +136,69 @@ body {
     }
 
 // carousel >>
+  
+.swiper-wrap { // Navigationをabsoluteで配置するためのwrapper
+  position: relative; 
+  padding-top: 50px;
 
-    .swiper-area {
-      margin-inline: auto;
-      margin-left: 120px;
-      position: relative;
+    .swiper-scrollbar {
+      position: absolute;
+      top: 0px;
+      left: 120px;
+      height: 3px;
+      width: 200px;
+      border-radius: 5px;
+      background: #fff7f7;
+    }
+
+    .swiper-scrollbar-drag {
+      border-radius: 5px;
+      background: red;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      height: 30px;
+      width: 30px;
+    }
+
+    .swiper-button-prev {
+      position: absolute;
+      top: 18px;
+      left: 360px;
+    }
+
+    .swiper-button-next {
+      position: absolute;
+      top: 18px;
+      left: 420px;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: "";
+      height: 30px;
+      margin: auto;
+      width: 30px;
+    }
+
+    .swiper-button-prev::after {
+      background-image: url(/img/arrow-left.png);
+    }
+
+    .swiper-button-next::after {
+      background-image: url(/img/arrow-right.png);
+    }
+  
 
       .swiper {
-        padding-top: 16px;
+        padding-top: 30px;
+        padding-bottom: 50px;
         height: auto;
+        margin-inline: auto;
+        margin-left: 120px;
 
         .swiper-wrapper {
           width: 450px;
@@ -151,7 +206,8 @@ body {
         }
   
         .swiper-slide {
-          height: 100%;
+          height: auto;
+          width: 100%;
           transition: all 0.5s;
           
           &:hover {
@@ -162,22 +218,8 @@ body {
             border-radius: 3% / 5%;
           }
         }
-
-        .swiper-pagination-progressbar {
-          height: 3px;
-          width: 300px;
-          border-radius: 5px;
-        }
-        .swiper-pagination-progressbar {
-          background: rgba(255,255,255,0.5);
-        }
-        .swiper-pagination-progressbar-fill {
-          border-radius: 5px;
-          background: red;
-        }
       }
-    }
-
+}
 
 
 // >> END carousel
@@ -192,9 +234,8 @@ body {
   .container-contact {
     background-color: #fcfaf6;
     height: 100%;
-    margin-top: 150px;
+    margin-top: 200px;
     margin-bottom: 300px;
-    // padding: 10% 30% 10% 30%;
     text-align: center;
 
     > h3 {

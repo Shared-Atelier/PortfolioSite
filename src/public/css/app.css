@@ -95,52 +95,87 @@ body {
   height: 100%;
   width: 100%;
   margin-top: 200px;
+  position: relative;
 }
 .container-works > h3 {
   color: #303030;
   text-align: center;
   margin-bottom: 100px;
 }
-.container-works .swiper-area {
+.container-works .swiper-wrap {
+  position: relative;
+  padding-top: 50px;
+}
+.container-works .swiper-wrap .swiper-scrollbar {
+  position: absolute;
+  top: 0px;
+  left: 120px;
+  height: 3px;
+  width: 200px;
+  border-radius: 5px;
+  background: #fff7f7;
+}
+.container-works .swiper-wrap .swiper-scrollbar-drag {
+  border-radius: 5px;
+  background: red;
+}
+.container-works .swiper-wrap .swiper-button-prev,
+.container-works .swiper-wrap .swiper-button-next {
+  height: 30px;
+  width: 30px;
+}
+.container-works .swiper-wrap .swiper-button-prev {
+  position: absolute;
+  top: 18px;
+  left: 360px;
+}
+.container-works .swiper-wrap .swiper-button-next {
+  position: absolute;
+  top: 18px;
+  left: 420px;
+}
+.container-works .swiper-wrap .swiper-button-prev::after,
+.container-works .swiper-wrap .swiper-button-next::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 30px;
+  margin: auto;
+  width: 30px;
+}
+.container-works .swiper-wrap .swiper-button-prev::after {
+  background-image: url(/img/arrow-left.png);
+}
+.container-works .swiper-wrap .swiper-button-next::after {
+  background-image: url(/img/arrow-right.png);
+}
+.container-works .swiper-wrap .swiper {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  height: auto;
   margin-inline: auto;
   margin-left: 120px;
-  position: relative;
 }
-.container-works .swiper-area .swiper {
-  padding-top: 16px;
-  height: auto;
-}
-.container-works .swiper-area .swiper .swiper-wrapper {
+.container-works .swiper-wrap .swiper .swiper-wrapper {
   width: 450px;
   margin-right: 0;
 }
-.container-works .swiper-area .swiper .swiper-slide {
-  height: 100%;
+.container-works .swiper-wrap .swiper .swiper-slide {
+  height: auto;
+  width: 100%;
   transition: all 0.5s;
 }
-.container-works .swiper-area .swiper .swiper-slide:hover {
+.container-works .swiper-wrap .swiper .swiper-slide:hover {
   transform: translateY(-16px);
 }
-.container-works .swiper-area .swiper .swiper-slide img {
+.container-works .swiper-wrap .swiper .swiper-slide img {
   border-radius: 3%/5%;
-}
-.container-works .swiper-area .swiper .swiper-pagination-progressbar {
-  height: 3px;
-  width: 300px;
-  border-radius: 5px;
-}
-.container-works .swiper-area .swiper .swiper-pagination-progressbar {
-  background: rgba(255, 255, 255, 0.5);
-}
-.container-works .swiper-area .swiper .swiper-pagination-progressbar-fill {
-  border-radius: 5px;
-  background: red;
 }
 
 .container-contact {
   background-color: #fcfaf6;
   height: 100%;
-  margin-top: 150px;
+  margin-top: 200px;
   margin-bottom: 300px;
   text-align: center;
 }

@@ -34,26 +34,23 @@
 
  <div class="container-works" id="works">
   <h3>Works</h3>
-  <div class='card01 l-section'>
-    <div class='l-inner'>
-
-    <div class='swiper-area'>
-      <div class='swiper swiper-works'>
-        <div class='swiper-wrapper'>
-          <div class='swiper-slide'><img src="{{ asset('/img/top_works_1.jpg') }}" alt=""></div>
-          <div class='swiper-slide'><img src="{{ asset('/img/top_works_2.jpg') }}" alt=""></div>
-          <div class='swiper-slide'><img src="{{ asset('/img/top_works_3.jpg') }}" alt=""></div>
-          <div class='swiper-slide'><img src="{{ asset('/img/top_works_4.jpg') }}" alt=""></div>
-          <div class='swiper-slide'><img src="{{ asset('/img/top_works_5.jpg') }}" alt=""></div>
-          <div class='swiper-slide'><img src="{{ asset('/img/top_works_6.jpg') }}" alt=""></div>
-        </div>
-        <div class='swiper-pagination'></div>
-        <div class='swiper-button-prev'><img src="{{ asset('arrow-left.png') }}" alt=""></div>
-        <div class='swiper-button-next'><img src="{{ asset('arrow-right.png') }}" alt=""></div>
-      </div>
+  <div class='swiper-wrap'>
+    <!-- swiper start -->
+    <div class='swiper'>  
+      <div class='swiper-wrapper'>
+        <div class='swiper-slide'><img src="{{ asset('/img/top_works_1.jpg') }}" alt=""></div>
+        <div class='swiper-slide'><img src="{{ asset('/img/top_works_2.jpg') }}" alt=""></div>
+        <div class='swiper-slide'><img src="{{ asset('/img/top_works_3.jpg') }}" alt=""></div>
+        <div class='swiper-slide'><img src="{{ asset('/img/top_works_4.jpg') }}" alt=""></div>
+        <div class='swiper-slide'><img src="{{ asset('/img/top_works_5.jpg') }}" alt=""></div>
+        <div class='swiper-slide'><img src="{{ asset('/img/top_works_6.jpg') }}" alt=""></div>
+      </div>     
     </div>
+    <div class='swiper-scrollbar swiper-scrollbar-horizontal'></div>
+    <div class='swiper-button-prev'></div>
+    <div class='swiper-button-next'></div>
+    <!-- swiper end -->
   </div>
-  
  </div>
 
  <div class="container-contact" id="contact">
