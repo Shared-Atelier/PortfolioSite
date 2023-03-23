@@ -49,8 +49,8 @@
         </div>
       </div>
       <div class='swiper-pagination'></div>
-      <div class='swiper-button-prev'><img src="{{ asset('arrow-left.png') }}" alt=""></div>
-      <div class='swiper-button-next'><img src="{{ asset('arrow-right.png') }}" alt=""></div>
+      <div class='swiper-button-prev swiper-button-white'><img src="{{ asset('arrow-left.png') }}" alt=""></div>
+      <div class='swiper-button-next swiper-button-white'><img src="{{ asset('arrow-right.png') }}" alt=""></div>
     </div>
   </div>
   
