@@ -9,16 +9,7 @@ let mySwiper = new Swiper ('.swiper-works',{
   effect: 'slide',
   slidesPerView: auto,
   spaceBetween: 40,
-  breakpoints: {
-    600: {
-      slidesPerView: 2,
-      spaceBetween: 15,
-    },
-    1025: {
-      slidesPerView: 4,
-      spaceBetween: 32,
-    }
-  },
+  slidesOffsetBefore: 40,
   pagination: {                     //ページネーション(プログレスバー)
     el: '.swiper-pagination',
     type: 'progressbar',
