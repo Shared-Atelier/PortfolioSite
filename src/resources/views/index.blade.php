@@ -46,6 +46,8 @@
         <div class='swiper-slide'><img src="{{ asset('/img/top_works_6.jpg') }}" alt=""></div>
       </div>     
     </div>
+    <img class='swiper-scrollbar_no_1' src="{{ asset('/img/scrollbar_no_1.png') }}" alt="">
+    <img class='swiper-scrollbar_no_6' src="{{ asset('/img/scrollbar_no_6.png') }}" alt="">
     <div class='swiper-scrollbar swiper-scrollbar-horizontal'></div>
     <div class='swiper-button-prev'></div>
     <div class='swiper-button-next'></div>
