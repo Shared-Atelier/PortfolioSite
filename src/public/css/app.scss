@@ -141,12 +141,28 @@ body {
   position: relative; 
   padding-top: 50px;
 
+    .swiper-scrollbar_no_1 {
+      position: absolute;
+      top: -13px;
+      left: 120px;
+      height: 30px;
+      width: 30px;
+    }
+
+    .swiper-scrollbar_no_6 {
+      position: absolute;
+      top: -13px;
+      left: 320px;
+      height: 30px;
+      width: 30px;
+    }
+
     .swiper-scrollbar {
       position: absolute;
       top: 0px;
-      left: 120px;
+      left: 170px;
       height: 3px;
-      width: 200px;
+      width: 130px;
       border-radius: 5px;
       background: #fff7f7;
     }
@@ -165,13 +181,23 @@ body {
     .swiper-button-prev {
       position: absolute;
       top: 18px;
-      left: 360px;
+      left: 450px;
+
+      &:hover {
+        transition: 0.3s;
+        transform: scale(1.3);
+      }
     }
 
     .swiper-button-next {
       position: absolute;
       top: 18px;
-      left: 420px;
+      left: 520px;
+      
+      &:hover {
+        transition: 0.3s;
+        transform: scale(1.3);
+      }
     }
 
     .swiper-button-prev::after,
