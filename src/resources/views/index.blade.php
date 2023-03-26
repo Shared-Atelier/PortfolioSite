@@ -58,20 +58,6 @@
  <div class="container-contact" id="contact">
   <h3>Contact</h3>
   <button id='contact-show'>お問い合わせはこちら</button>
-  <div class='contact-form-wrapper' id='contact-modal'>
-    <div class='modal'>
-      <div id='contact-form'>
-        <img class='close' id='modal-close' src="{{ asset('/img/cross.png') }}" alt="">
-        <h2>Contactフォーム</h2>
-        <form action="#">
-          <input class='form-control, form-email' type="email" placeholder='メールアドレス'>
-          <textarea class='form-control, form-text' type="text" placeholder='お問合せ内容'></textarea>
-          <div id='submit-btn'>送信</div>
-        </form>
-      </div>
-    </div>
-
-  </div>
  </div>
  
 
