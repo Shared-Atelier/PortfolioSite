@@ -74,7 +74,7 @@ body {
 // END Header //
 
 
-// Hero //
+// index Hero //
 
 .container-top {
 
@@ -84,10 +84,10 @@ body {
     width: 100%;
   }
 }
-// END Hero //
+// END index Hero //
 
 
-// About //
+// index About //
 
   .container-about {
 
@@ -125,10 +125,10 @@ body {
     }
   }
 
-// END About //
+// END index About //
 
 
-// Works //
+// index Works //
 
   .container-works {
     background-color: #fcfaf6;
@@ -317,10 +317,10 @@ body {
 
   }
 
-// END Works //
+// END index Works //
 
 
-// Contact //
+// index Contact //
 
   .container-contact {
     background-color: #fcfaf6;
@@ -348,14 +348,70 @@ body {
       color: white;
       margin-top: 50px;
       cursor: pointer;
-
+      
       &:hover {
         opacity: 0.8;
       }
     }
   }
 
-// END Contact //
+// END index Contact //
+
+
+// Contact contact //
+
+.contact-form-wrapper {
+  margin: 100px auto 200px auto;
+  width: 600px;
+
+  @media screen and (max-width:768px) {
+    width: 330px;
+  }
+
+  > h2 {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .form-item {
+    margin: 0 auto;
+    text-align: center;
+
+    .label {
+      margin-top: 30px;
+      margin-bottom: 0px;
+      text-align: left;
+    }
+
+    .submit-btn {
+      margin: 30px auto 0 auto;
+      width: 150px;
+      font-size: 16px;
+      text-align: center;
+      padding: 10px;
+      background: red;
+      color: white;
+      line-height: 1rem;
+      border: none;
+      border-radius: 20px;
+
+      &:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+        transform: scale(1.1);
+
+      }
+    }
+  }
+
+  .input, .textarea {
+    width: 100%;
+    resize: none;
+
+  }
+}
+
+// END Contact contact //
 
 
 // Footer //

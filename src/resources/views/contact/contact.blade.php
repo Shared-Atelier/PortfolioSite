@@ -1,11 +1,28 @@
+@extends('layouts.app')
+
+@section('content')
+
 <div class='contact-form-wrapper'>
-    <div id='contact-form'>
-    <img class='close' src="{{ asset('/img/cross.png') }}" alt="">
-    <h2>Contactフォーム</h2>
-    <form action="#">
-        <input class='form-email' type="email" placeholder='メールアドレス'>
-        <textarea class='form-text' type="text" placeholder='お問合せ内容'></textarea>
-        <div id='submit-btn'>送信</div>
+    <h2>Contact</h2>
+    <form action="#" method="post">
+        <div class="form">
+            <div class="form-item">
+                <p class="label">お名前</p>
+                <input class='input' type="text" placeholder='例)吉沢 亮'>
+            </div>
+            <div class="form-item">
+                <p class="label">メールアドレス</p>
+                <input class="input" type="email" placeholder="例)example@gmail.com">
+            </div>
+            <div class="form-item">
+                <p class="label">お問い合わせ内容</p>
+                <textarea class=textarea name="textarea" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-item">
+                <input type="submit" class="submit-btn">    
+            </div>
+        </div>
     </form>
-    </div>
 </div>
+
+@endsection

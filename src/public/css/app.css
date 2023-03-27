@@ -301,6 +301,50 @@ body {
   opacity: 0.8;
 }
 
+.contact-form-wrapper {
+  margin: 100px auto 200px auto;
+  width: 600px;
+}
+@media screen and (max-width: 768px) {
+  .contact-form-wrapper {
+    width: 330px;
+  }
+}
+.contact-form-wrapper > h2 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.contact-form-wrapper .form-item {
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-form-wrapper .form-item .label {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+.contact-form-wrapper .form-item .submit-btn {
+  margin: 30px auto 0 auto;
+  width: 150px;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  background: red;
+  color: white;
+  line-height: 1rem;
+  border: none;
+  border-radius: 20px;
+}
+.contact-form-wrapper .form-item .submit-btn:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+.contact-form-wrapper .input, .contact-form-wrapper .textarea {
+  width: 100%;
+  resize: none;
+}
+
 .container-footer {
   background-color: #fcfaf6;
 }
