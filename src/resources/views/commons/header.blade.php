@@ -1,7 +1,9 @@
 <div class="header">
 
     <div class="header__logo">
-        <a href="{{ asset('/') }}"><img src="{{ asset('img/logo.png') }}" alt=""></a>
+        <a href="{{ asset('/') }}">
+            <img src="{{ asset('img/logo.png') }}" alt="">
+        </a>
     </div>
 
     <!-- hamburger menu -->
@@ -17,18 +19,19 @@
     <nav class="sm">
         <ul>
             <li>
-                <a href="#about">
+                <a href="{{ route('index', '#about') }}">
                     About
                 </a>
             </li>
             <li>
-                <a href="#works">
+                <a href="{{ route('index', '#works') }}">
                     Works
                 </a>
             </li>
             <li>
-                <a href="#contact">
+                <a href="{{ route('index', '#contact') }}">
                     Contact
+
                 </a>
             </li>
         </ul>
@@ -38,17 +41,17 @@
     <nav class="header__menu pc">
         <ul class="header__menu-list">
             <li class="header__menu-text">
-                <a class="" href="#about">
+                <a class="" href="{{ route('index', '#about') }}">
                     About
                 </a>
             </li>
             <li class="header__menu-text">
-                <a class="" href="#works">
+                <a class="" href="{{ route('index', '#works') }}">
                     Works
                 </a>
             </li>
             <li class="header__menu-text">
-                <a class="" href="#contact">
+                <a class="" href="{{ route('index', '#contact') }}">
                     Contact
                 </a>
             </li>

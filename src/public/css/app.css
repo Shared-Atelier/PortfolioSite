@@ -400,20 +400,57 @@ body {
   }
 }
 .contact-form-wrapper > h2 {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   text-align: center;
 }
 .contact-form-wrapper .form-item {
   margin: 0 auto;
+  width: 100%;
   text-align: center;
+  position: relative;
 }
-.contact-form-wrapper .form-item .label {
-  margin-top: 30px;
-  margin-bottom: 0px;
+.contact-form-wrapper .form-item p {
+  margin-top: 50px;
   text-align: left;
 }
+.contact-form-wrapper .form-item .input {
+  position: relative;
+  display: block;
+  width: 565px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px 15px 15px 15px;
+  border: solid 1px #a0a0a0;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #303030;
+  outline: none;
+}
+@media screen and (max-width: 768px) {
+  .contact-form-wrapper .form-item .input {
+    width: 300px;
+  }
+}
+.contact-form-wrapper .form-item .textarea {
+  position: relative;
+  display: block;
+  width: 565px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px 15px 15px 15px;
+  border: solid 1px #a0a0a0;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #303030;
+  outline: none;
+}
+@media screen and (max-width: 768px) {
+  .contact-form-wrapper .form-item .textarea {
+    width: 300px;
+  }
+}
 .contact-form-wrapper .form-item .submit-btn {
-  margin: 30px auto 0 auto;
+  margin: 50px auto 0 auto;
   width: 150px;
   font-size: 16px;
   text-align: center;
