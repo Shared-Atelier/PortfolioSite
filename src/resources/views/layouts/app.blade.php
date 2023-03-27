@@ -23,5 +23,12 @@
             <script src="{{ asset('js/app.js') }}"></script>
             <!-- jQuery -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            <!-- hamburger -->
+            <script>
+                $('#hamburger').on('click', function() {
+                    $('.icon').toggleClass('close');
+                    $('.sm').slideToggle();
+                });
+            </script>
         </body>
     </html>
