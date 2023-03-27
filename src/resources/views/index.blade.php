@@ -57,7 +57,7 @@
 
  <div class="container-contact" id="contact">
   <h3>Contact</h3>
-  <button id='contact-show'>お問い合わせはこちら</button>
+  <button onclick="location.href='{{ route('contact') }}'">お問い合わせはこちら</button>
  </div>
  
 
