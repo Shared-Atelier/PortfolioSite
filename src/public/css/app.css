@@ -130,15 +130,25 @@ body {
 }
 
 .container-about {
-  padding-top: 200px;
-  margin-top: 0px;
+  padding-top: 100px;
+  margin-top: 100px;
   background-color: #fcfaf6;
   height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .container-about {
+    padding-top: 70px;
+  }
 }
 .container-about > h3 {
   color: #303030;
   text-align: left;
   margin-left: 20%;
+}
+@media screen and (max-width: 768px) {
+  .container-about > h3 {
+    margin-left: 10%;
+  }
 }
 .container-about .wrapper-about {
   margin-right: 20%;
@@ -149,6 +159,12 @@ body {
   display: flex;
   align-items: center;
   padding: 30px;
+}
+@media screen and (max-width: 768px) {
+  .container-about .wrapper-about {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
 }
 .container-about .wrapper-about h5 {
   color: #303030;
@@ -165,8 +181,14 @@ body {
   height: 100%;
   width: 100%;
   padding-top: 100px;
-  margin-top: 200px;
+  margin-top: 100px;
   position: relative;
+}
+@media screen and (max-width: 768) {
+  .container-works {
+    padding-top: 50px;
+    margin-top: 50px;
+  }
 }
 .container-works > h3 {
   color: #303030;
@@ -335,14 +357,15 @@ body {
 .container-contact {
   background-color: #fcfaf6;
   height: 100%;
-  padding-top: 200px;
+  padding-top: 100px;
   margin-top: 0px;
   margin-bottom: 300px;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
   .container-contact {
-    margin-top: 100px;
+    padding-top: 230px;
+    margin-top: -100px;
   }
 }
 .container-contact > h3 {
@@ -356,6 +379,7 @@ body {
   background-color: red;
   border: none;
   border-radius: 3px;
+  font-size: 13px;
   color: white;
   margin-top: 50px;
   cursor: pointer;
@@ -414,6 +438,7 @@ body {
   background-color: #fcfaf6;
 }
 .container-footer-text > p {
+  font-size: 13px;
   text-align: center;
   color: #303030;
 }/*# sourceMappingURL=app.css.map */
