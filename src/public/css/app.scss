@@ -16,6 +16,7 @@ body {
   margin: 0px;
 }
 
+
 // Header //
 
 .header {
@@ -478,22 +479,59 @@ body {
   }
 
   > h2 {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     text-align: center;
   }
 
   .form-item {
     margin: 0 auto;
+    width: 100%;
     text-align: center;
+    position: relative;
 
-    .label {
-      margin-top: 30px;
-      margin-bottom: 0px;
+    p {
+      margin-top: 50px;
       text-align: left;
     }
 
+    .input {
+      position: relative;
+      display: block;
+      width: 565px;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 15px 15px 15px 15px;
+      border: solid 1px #a0a0a0;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #303030;
+      outline: none;
+
+      @media screen and (max-width:768px) {
+        width: 300px;
+      }
+    }
+
+    .textarea {
+      position: relative;
+      display: block;
+      width: 565px;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 15px 15px 15px 15px;
+      border: solid 1px #a0a0a0;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #303030;
+      outline: none;
+
+      @media screen and (max-width:768px) {
+        width: 300px;
+      }
+    }
+
     .submit-btn {
-      margin: 30px auto 0 auto;
+      margin: 50px auto 0 auto;
       width: 150px;
       font-size: 16px;
       text-align: center;

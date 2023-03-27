@@ -7,19 +7,19 @@
     <form action="#" method="post">
         <div class="form">
             <div class="form-item">
-                <p class="label">お名前</p>
-                <input class='input' type="text" placeholder='例)吉沢 亮'>
+                <p class='label'>FullName</p>
+                <input class='input' type="text" placeholder='FullName'>
             </div>
             <div class="form-item">
-                <p class="label">メールアドレス</p>
-                <input class="input" type="email" placeholder="例)example@gmail.com">
+                <p class="label">Email</p>
+                <input class="input" type="email" placeholder="Email">
             </div>
             <div class="form-item">
-                <p class="label">お問い合わせ内容</p>
+                <p class="label">Inquery</p>
                 <textarea class=textarea name="textarea" cols="30" rows="10"></textarea>
             </div>
             <div class="form-item">
-                <input type="submit" class="submit-btn" value="送 信">    
+                <input type="submit" class="submit-btn" value="Send">    
             </div>
         </div>
     </form>
