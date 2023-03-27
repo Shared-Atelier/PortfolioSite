@@ -19,7 +19,7 @@
                 <textarea class=textarea name="textarea" cols="30" rows="10"></textarea>
             </div>
             <div class="form-item">
-                <input type="submit" class="submit-btn">    
+                <input type="submit" class="submit-btn" value="送 信">    
             </div>
         </div>
     </form>

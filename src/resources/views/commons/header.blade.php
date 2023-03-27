@@ -1,8 +1,41 @@
-<nav class="header">
-    <a class="header__logo" href="{{ asset('/') }}">
-        <img src="{{ asset('img/logo.png') }}" alt="" class="logo">
-    </a>
-    <div class="header__menu">
+<div class="header">
+
+    <div class="header__logo">
+        <a href="{{ asset('/') }}"><img src="{{ asset('img/logo.png') }}" alt=""></a>
+    </div>
+
+    <!-- hamburger menu -->
+    <div id="hamburger">
+        <div class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- hamburger menu list -->
+    <nav class="sm">
+        <ul>
+            <li>
+                <a href="#about">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="#works">
+                    Works
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- header list -->
+    <nav class="header__menu pc">
         <ul class="header__menu-list">
             <li class="header__menu-text">
                 <a class="" href="#about">
@@ -20,5 +53,5 @@
                 </a>
             </li>
         </ul>
-    </div>
-</nav>
+    </nav>
+</div>
