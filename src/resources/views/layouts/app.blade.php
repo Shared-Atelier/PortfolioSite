@@ -53,5 +53,7 @@
             <script src="{{ asset('/js/4-1-1.js') }}"></script>
             {{-- page top link --}}
             <script src="{{ asset('/js/8-1-7.js') }}"></script>
+            {{-- scrollbar --}}
+            <link rel="stylesheet" type="text/css" href="{{ asset('/css/9-1-1.css') }}">
         </body>
     </html>

@@ -6,7 +6,9 @@
   <img src="{{ asset('/img/top_mv_1.png') }}" alt="">
  </div>
 
- <div class="container-about" id="about top_page_link">
+ <div class="scrolldown"><span>Scroll</span></div>
+
+ <div class="container-about" id="about">
   <h3>About</h3>
   <div class="wrapper-about">
     <p>About our skills.<br><br>
@@ -60,8 +62,5 @@
   <h3>Contact</h3>
   <button onclick="location.href='{{ route('contact') }}'">お問い合わせはこちら</button>
  </div> 
-
- <p class="js-scroll scroll-top scroll-view"><a href="#top_page_link">Page Slide</a></p>
- <p class="js-pagetop scroll-top"><a href="#">Page Top</a></p>
 
 @endsection
