@@ -14,15 +14,31 @@
             <link rel="stylesheet" href="{{ asset('/css/app.css') }}" type="text/css">
             <!-- jQuery -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+            {{-- loading --}}
+            <link rel="stylesheet" type='text/css' href="{{ asset('/css/4-1-1.css') }}">
+            {{-- menu button background --}}
+            <link rel="stylesheet" type="text/css" href="{{ asset('/css/5-3-7.css') }}">
+            {{-- page top link --}}
+            <link rel="stylesheet" type="text/css" href="{{ asset('/css/8-1-7.css') }}">
         </head>
+
         <body>
-            @include('commons.header')
-            @yield('content')
-            @include('commons.footer')
+            <div id="splash">
+                <div id="splash_text"></div>
+            </div>
+
+            <div class="contaner">
+                <header>@include('commons.header')</header>
+                
+                <main>@yield('content')</main>
+
+                <footer>@include('commons.footer')</footer>
+            </div>
+            
             <!-- Swiper.min.js -->
             <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
             <!-- Scripts -->
-            <script src="{{ asset('js/app.js') }}"></script>
+            <script src="{{ asset('/js/app.js') }}"></script>
             <!-- jQuery -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
             <!-- hamburger -->
@@ -32,5 +48,10 @@
                     $('.sm').slideToggle();
                 });
             </script>
+            {{-- loading --}}
+            <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+            <script src="{{ asset('/js/4-1-1.js') }}"></script>
+            {{-- page top link --}}
+            <script src="{{ asset('/js/8-1-7.js') }}"></script>
         </body>
     </html>

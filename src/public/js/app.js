@@ -1,6 +1,6 @@
 // import './bootstrap';
 
-// Works_carousel
+// Works_Carousel
 
 // const swiper = new Swiper('.swiper-works', { //方言
 let mySwiper = new Swiper ('.swiper',{
@@ -20,10 +20,9 @@ let mySwiper = new Swiper ('.swiper',{
 });
 
 
-
-  // jQ Ready Test
-  // $(function() {
-  //   alert('OK!');
-  // });
+// jQ Ready Test
+// $(function() {
+//   alert('OK!');
+// });
 
 

@@ -39,7 +39,7 @@
 
     <!-- header list -->
     <nav class="header__menu pc">
-        <ul class="header__menu-list">
+        <ul class="header__menu-list gnavi">
             <li class="header__menu-text">
                 <a class="" href="{{ route('index', '#about') }}">
                     About
