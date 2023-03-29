@@ -6,7 +6,7 @@
   <img src="{{ asset('/img/top_mv_1.png') }}" alt="">
  </div>
 
- <div class="container-about" id="about">
+ <div class="container-about" id="about top_page_link">
   <h3>About</h3>
   <div class="wrapper-about">
     <p>About our skills.<br><br>
@@ -31,6 +31,9 @@
     VBA for Excel</p>
   </div>
  </div>
+ 
+ <p class="js-scroll scroll-top scroll-view"><a href="#top_page_link">Scroll</a></p>
+ <p class="js-pagetop scroll-top"><a href="#">Page Top</a></p>
 
  <div class="container-works" id="works">
   <h3>Works</h3>
@@ -58,7 +61,6 @@
  <div class="container-contact" id="contact">
   <h3>Contact</h3>
   <button onclick="location.href='{{ route('contact') }}'">お問い合わせはこちら</button>
- </div>
- 
+ </div> 
 
 @endsection
