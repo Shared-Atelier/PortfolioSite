@@ -1,0 +1,90 @@
+.scrolldown {
+    position: absolute;
+    left: 50%;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:768px) {
+ 
+    .scrolldown {
+        position: absolute;
+        left: 50%;
+        margin-top: 30px;
+    }
+}
+
+.scrolldown span {
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    color: #303030;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+}
+
+.scrolldown::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 180px;
+    background: #303030;
+    animation: pathmove 3.4s ease-in-out infinite;
+    opacity: 0;
+}
+
+@keyframes pathmove {
+    0% {
+        height: 0;
+        top: 0;
+        opacity: 0;
+    }
+    30% {
+        height: 100;
+        opacity: 1;
+    }
+    80% {
+        height: 160;
+        opacity: 1;
+    }
+    100% {
+        height: 180;
+        top: 50;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .scrolldown::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 140px;
+        background: #303030;
+        animation: pathmove 3.4s ease-in-out infinite;
+        opacity: 0;
+    }
+    
+    @keyframes pathmove {
+        0% {
+            height: 0;
+            top: 0;
+            opacity: 0;
+        }
+        30% {
+            height: 80;
+            opacity: 1;
+        }
+        80% {
+            height: 120;
+            opacity: 1;
+        }
+        100% {
+            height: 140;
+            top: 50;
+            opacity: 0;
+        }
+    }
+}
