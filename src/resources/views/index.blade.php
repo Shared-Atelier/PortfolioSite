@@ -32,8 +32,6 @@
   </div>
  </div>
  
- <p class="js-scroll scroll-top scroll-view"><a href="#top_page_link">Scroll</a></p>
- <p class="js-pagetop scroll-top"><a href="#">Page Top</a></p>
 
  <div class="container-works" id="works">
   <h3>Works</h3>
@@ -62,5 +60,8 @@
   <h3>Contact</h3>
   <button onclick="location.href='{{ route('contact') }}'">お問い合わせはこちら</button>
  </div> 
+
+ <p class="js-scroll scroll-top scroll-view"><a href="#top_page_link">Page Slide</a></p>
+ <p class="js-pagetop scroll-top"><a href="#">Page Top</a></p>
 
 @endsection
