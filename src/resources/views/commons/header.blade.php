@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" id="header">
 
     <div class="header__logo">
         <a href="{{ asset('/') }}">
@@ -16,7 +16,7 @@
     </div>
 
     <!-- hamburger menu list -->
-    <nav class="sm">
+    <nav class="sm" id="g-nav">
         <ul>
             <li>
                 <a href="{{ route('index', '#about') }}">
@@ -38,8 +38,8 @@
     </nav>
 
     <!-- header list -->
-    <nav class="header__menu pc">
-        <ul class="header__menu-list gnavi">
+    <nav class="header__menu pc gnavi">
+        <ul class="header__menu-list">
             <li class="header__menu-text">
                 <a class="" href="{{ route('index', '#about') }}">
                     About

@@ -11,7 +11,8 @@
  <div class="container-about" id="about">
   <h3>About</h3>
   <div class="wrapper-about">
-    <p>About our skills.<br><br>
+    <p>ー About our skills. ー<br>
+    <br>
     Docker<br>
     Vagrant<br>
     VirtualBox<br>
@@ -23,6 +24,7 @@
     HTML<br>
     CSS/Sass<br>
     JavaScript<br>
+    jQuery<br>
     PHP<br>
     Laravel<br>
     MySQL<br>
