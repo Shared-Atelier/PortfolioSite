@@ -7,6 +7,7 @@ body {
 .hero_container {
   position: relative;
   width: 100%;
+  height: 100%;
 }
 .hero_container .hero_mov {
   width: 100%;
@@ -15,11 +16,17 @@ body {
   z-index: 999;
   position: absolute;
   left: 50%;
-  top: 260px;
+  top: 35%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   width: 33.3333333333%;
+}
+@media screen and (max-width: 400px) {
+  .hero_container .hero_logo {
+    top: 25%;
+    width: 50%;
+  }
 }
 
 .container_howto {
@@ -27,12 +34,41 @@ body {
   margin: 100px auto 0 auto;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .container_howto {
+    display: block;
+  }
+}
 .container_howto .howto_discription {
   width: 50%;
   padding: 0 50px 0 0;
 }
+@media screen and (max-width: 768px) {
+  .container_howto .howto_discription {
+    width: 100%;
+    padding: 0;
+  }
+}
 .container_howto .howto_pic {
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .container_howto .howto_pic .content_pic {
+    width: 600px;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container_howto .howto_pic .content_pic {
+    width: 380px;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container_howto .howto_pic .content_pic {
+    width: 380px;
+    margin-left: auto;
+  }
 }
 
 .container_profile {
@@ -40,12 +76,35 @@ body {
   margin: 100px auto 0 auto;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .container_profile {
+    display: block;
+  }
+}
 .container_profile .profile_discription {
   width: 50%;
   padding: 0 50px 0 0;
 }
+@media screen and (max-width: 768px) {
+  .container_profile .profile_discription {
+    width: 100%;
+    padding: 0;
+  }
+}
 .container_profile .profile_pic {
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .container_profile .profile_pic .content_pic {
+    width: 600px;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container_profile .profile_pic .content_pic {
+    width: 380px;
+    margin-left: auto;
+  }
 }
 
 .container_misa {
@@ -53,14 +112,41 @@ body {
   margin: 100px auto 0 auto;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .container_misa {
+    display: block;
+  }
+}
 .container_misa .misa_discription {
   width: 50%;
   padding: 0 50px 0 0;
 }
+@media screen and (max-width: 768px) {
+  .container_misa .misa_discription {
+    width: 100%;
+    padding: 0;
+  }
+}
 .container_misa .misa_pic {
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .container_misa .misa_pic .content_pic {
+    width: 600px;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container_misa .misa_pic .content_pic {
+    width: 380px;
+    margin-left: auto;
+  }
 }
 
 .content_pic {
   width: 800px;
+}
+
+.container-footer-text {
+  text-align: center;
 }/*# sourceMappingURL=app.css.map */
