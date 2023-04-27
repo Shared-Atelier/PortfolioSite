@@ -1,0 +1,66 @@
+@charset "UTF-8";
+body {
+  margin: 0px;
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.hero_container {
+  position: relative;
+  width: 100%;
+}
+.hero_container .hero_mov {
+  width: 100%;
+}
+.hero_container .hero_logo {
+  z-index: 999;
+  position: absolute;
+  left: 50%;
+  top: 260px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  width: 33.3333333333%;
+}
+
+.container_howto {
+  width: 80%;
+  margin: 100px auto 0 auto;
+  display: flex;
+}
+.container_howto .howto_discription {
+  width: 50%;
+  padding: 0 50px 0 0;
+}
+.container_howto .howto_pic {
+  width: 50%;
+}
+
+.container_profile {
+  width: 80%;
+  margin: 100px auto 0 auto;
+  display: flex;
+}
+.container_profile .profile_discription {
+  width: 50%;
+  padding: 0 50px 0 0;
+}
+.container_profile .profile_pic {
+  width: 50%;
+}
+
+.container_misa {
+  width: 80%;
+  margin: 100px auto 0 auto;
+  display: flex;
+}
+.container_misa .misa_discription {
+  width: 50%;
+  padding: 0 50px 0 0;
+}
+.container_misa .misa_pic {
+  width: 50%;
+}
+
+.content_pic {
+  width: 800px;
+}/*# sourceMappingURL=app.css.map */
