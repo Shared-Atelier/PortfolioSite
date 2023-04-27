@@ -13,9 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//IndexPage
 
 Route::get('/', function () {
     return view('index');
 })->name('index');
 
 Route::get('/contact/contact', 'App\Http\Controllers\ContactController@showContact')->name('contact');
+
+
+//Site01
+
+Route::get('/site01', function () {
+    return view('/site01/index');
+})->name('index01');

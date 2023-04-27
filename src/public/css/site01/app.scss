@@ -1,5 +1,72 @@
-// hero_mov
+body {
+    margin: 0px;
+    font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
 
-.hero_mov {
+
+// hero
+
+.hero_container {
+    position: relative;
     width: 100%;
+
+    .hero_mov {
+        width: 100%;
+    }
+    
+    .hero_logo {
+        z-index: 999;
+        position: absolute;
+        left: 50%;
+        top: 260px;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        width: calc(100%/3);
+    }
+}
+
+// content
+
+.container_howto {
+    width: 80%;
+    margin: 100px auto 0 auto;
+    display: flex;
+    .howto_discription {
+        width: calc(100%/2);
+        padding: 0 50px 0 0;
+    }
+    .howto_pic {
+        width: calc(100%/2);
+    }
+}
+
+.container_profile {
+    width: 80%;
+    margin: 100px auto 0 auto;
+    display: flex;
+    .profile_discription {
+        width: calc(100%/2);
+        padding: 0 50px 0 0;
+    }
+    .profile_pic {
+        width: calc(100%/2);
+    }
+}
+
+.container_misa {
+    width: 80%;
+    margin: 100px auto 0 auto;
+    display: flex;
+    .misa_discription {
+        width: calc(100%/2);
+        padding: 0 50px 0 0;
+    }
+    .misa_pic {
+        width: calc(100%/2);
+    }
+}
+
+.content_pic {
+    width: 800px;
 }
