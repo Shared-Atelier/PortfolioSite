@@ -31,7 +31,7 @@ The church is dedicated to the "26 Martyrs of Japan" who were martyred on the ar
 <div class="container_misa">
    <div class="misa_discription">
       <h1>ミサのご案内</h1>
-      <p>ミサの時間・アクセス<br>主日のミサ：日曜日の午前９時半<br>初金ミサ：第一金曜日の午前９時半<br>〒468-0014<br>名古屋市天白区2-1705<br><br>Mass times and access<br>Sunday Mass: 9:30 a.m. Sunday<br>First Friday Mass: 9:30 a.m.<br>〒468-0014<br>2-1705 Tenpaku-ku, Nagoya City</p>
+      <p>ミサの時間・アクセス<br>主日のミサ：日曜日の午前９時半<br>初金ミサ：第一金曜日の午前９時半<br>〒468-0014 名古屋市天白区2-1705<br><br>Mass times and access<br>Sunday Mass: 9:30 a.m. Sunday<br>First Friday Mass: 9:30 a.m.<br>〒468-0014 2-1705 Tenpaku-ku, Nagoya City</p>
    </div>
    <div class="misa_pic">
       <img src="{{ asset('/img/site01/misa.jpg') }}" alt="" class="content_pic">
