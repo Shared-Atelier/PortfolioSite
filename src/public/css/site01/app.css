@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   margin: 0px;
-  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "MS P明朝", "MS 明朝", serif;
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   color: #303030;
 }
 
@@ -9,12 +9,12 @@ body {
   position: fixed;
   z-index: 999;
   top: 0;
-  right: -70%;
-  width: 100%;
+  right: 70%;
+  width: 70%;
   height: 100vh;
-  background: #ede3d3;
-  opacity: 1;
-  transition: all 0.6s;
+  background: #ffffff;
+  opacity: 0.95;
+  transition: all 1s;
 }
 
 #g-nav.panelactive {
@@ -24,7 +24,7 @@ body {
 #g-nav.panelactive #g-nav-list {
   position: fixed;
   z-index: 999;
-  width: 100%;
+  width: 70%;
   height: 100vh;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -43,14 +43,25 @@ body {
   text-align: center;
 }
 
-#g-nav li a {
-  color: #303030;
+#g-nav li a h1 {
+  color: #ffffff;
   text-decoration: none;
   padding: 10px;
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: bold;
+}
+
+#g-nav li span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 0;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  width: 100%;
 }
 
 .open_btn {
@@ -67,11 +78,11 @@ body {
   display: inline-block;
   transition: all 0.4s;
   position: absolute;
-  left: 14px;
-  height: 3px;
+  left: -14px;
+  height: 1px;
   border-radius: 2px;
   background-color: #ede3d3;
-  width: 45%;
+  width: 100%;
 }
 
 .open_btn span:nth-of-type(1) {
@@ -88,9 +99,9 @@ body {
 
 .open_btn.active span:nth-of-type(1) {
   top: 18px;
-  left: 18px;
+  left: -18px;
   transform: translateY(6px) rotate(-45deg);
-  width: 30%;
+  width: 100%;
 }
 
 .open_btn.active span:nth-of-type(2) {
@@ -99,9 +110,9 @@ body {
 
 .open_btn.active span:nth-of-type(3) {
   top: 30px;
-  left: 18px;
+  left: -18px;
   transform: translateY(-6px) rotate(45deg);
-  width: 30%;
+  width: 100%;
 }
 
 .hero_container {
@@ -130,7 +141,7 @@ body {
 }
 
 .container_howto {
-  width: 80%;
+  width: 100%;
   margin: 100px auto 0 auto;
   display: flex;
 }
@@ -141,38 +152,33 @@ body {
 }
 .container_howto .howto_discription {
   width: 50%;
-  padding: 0 50px 0 0;
+  padding: 0 50px;
 }
 @media screen and (max-width: 768px) {
   .container_howto .howto_discription {
     width: 100%;
-    padding: 0;
+    padding: 0 30px 50px 30px;
   }
 }
 .container_howto .howto_pic {
   width: 50%;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .container_howto .howto_pic .content_pic {
     width: 600px;
-    margin-left: auto;
+    margin: auto;
   }
 }
 @media screen and (max-width: 400px) {
   .container_howto .howto_pic .content_pic {
     width: 380px;
-    margin-left: auto;
-  }
-}
-@media screen and (max-width: 400px) {
-  .container_howto .howto_pic .content_pic {
-    width: 380px;
-    margin-left: auto;
+    margin: 0 auto;
   }
 }
 
 .container_profile {
-  width: 80%;
+  width: 100%;
   margin: 100px auto 0 auto;
   display: flex;
 }
@@ -183,16 +189,17 @@ body {
 }
 .container_profile .profile_discription {
   width: 50%;
-  padding: 0 50px 0 0;
+  padding: 0 50px;
 }
 @media screen and (max-width: 768px) {
   .container_profile .profile_discription {
     width: 100%;
-    padding: 0;
+    padding: 0 30px 50px 30px;
   }
 }
 .container_profile .profile_pic {
   width: 50%;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .container_profile .profile_pic .content_pic {
@@ -208,7 +215,7 @@ body {
 }
 
 .container_misa {
-  width: 80%;
+  width: 100%;
   margin: 100px auto 0 auto;
   display: flex;
 }
@@ -219,16 +226,17 @@ body {
 }
 .container_misa .misa_discription {
   width: 50%;
-  padding: 0 50px 0 0;
+  padding: 0 50px;
 }
 @media screen and (max-width: 768px) {
   .container_misa .misa_discription {
     width: 100%;
-    padding: 0;
+    padding: 0 30px 50px 30px;
   }
 }
 .container_misa .misa_pic {
   width: 50%;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .container_misa .misa_pic .content_pic {
@@ -244,9 +252,10 @@ body {
 }
 
 .content_pic {
-  width: 800px;
+  width: 100%;
 }
 
 .container-footer-text {
   text-align: center;
+  z-index: 999;
 }/*# sourceMappingURL=app.css.map */
