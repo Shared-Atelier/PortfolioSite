@@ -152,33 +152,28 @@ body {
     display: flex;
 
     @media screen and (max-width:768px) {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .howto_discription {
-        width: calc(100%/2);
         padding: 0 50px;
+        flex-basis: 50%;
 
         @media screen and (max-width:768px) {
-            width: 100%;
-            padding: 0 30px 50px 30px;
+            flex-basis: 100%;
+            padding: 30px 30px 30px 30px;
+            order: 1;
         }
     }
     .howto_pic {
-        width: calc(100%/2);
         overflow: hidden;
+        flex-basis: 50%;
 
         @media screen and (max-width:768px) {
-            .content_pic {
-                width: 600px;
-                margin: auto;
-            }
-        }
-        @media screen and (max-width:400px) {
-            .content_pic {
-                width: 380px;
-                margin: 0 auto;
-            }
+            flex-basis: 80%;
+            margin: auto;
+            order: 0;
         }
     }
 }
@@ -189,36 +184,31 @@ body {
     display: flex;
 
     @media screen and (max-width:768px) {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .profile_discription {
-        width: calc(100%/2);
         padding: 0 50px;
+        flex-basis: 50%;
 
         @media screen and (max-width:768px) {
-            width: 100%;
-            padding: 0 30px 50px 30px;
+            flex-basis: 100%;
+            padding: 30px 30px 30px 30px;
+            order: 1;
         }
     }
     .profile_pic {
-        width: calc(100%/2);
         overflow: hidden;
+        flex-basis: 50%;
 
         @media screen and (max-width:768px) {
-            .content_pic {
-                width: 600px;
-                margin-left: auto;
-            }
+            flex-basis: 80%;
+            margin: auto;
+            order: 0;
         }
-        @media screen and (max-width:400px) {
-            .content_pic {
-                width: 380px;
-                margin-left: auto;
-            }
-        }
-
     }
+
 }
 
 .container_misa {
@@ -227,35 +217,29 @@ body {
     display: flex;
 
     @media screen and (max-width:768px) {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .misa_discription {
-        width: calc(100%/2);
         padding: 0 50px;
+        flex-basis: 50%;
 
         @media screen and (max-width:768px) {
-            width: 100%;
-            padding: 0 30px 50px 30px;
+            flex-basis: 100%;
+            padding: 30px 30px 30px 30px;
+            order: 1;
         }
     }
     .misa_pic {
-        width: calc(100%/2);
         overflow: hidden;
+        flex-basis: 50%;
 
         @media screen and (max-width:768px) {
-            .content_pic {
-                width: 600px;
-                margin-left: auto;
-            }
+            flex-basis: 80%;
+            margin: auto;
+            order: 0;
         }
-        @media screen and (max-width:400px) {
-            .content_pic {
-                width: 380px;
-                margin-left: auto;
-            }
-        }
-
     }
 }
 

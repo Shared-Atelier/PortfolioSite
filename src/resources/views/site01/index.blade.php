@@ -20,8 +20,7 @@
 <div class="container_profile">
    <div class="profile_discription">
       <h1>プロフィールと歴史</h1>
-      <p>「カトリック中平教会」は、日本26聖人殉教者記念教会として1979年に創設されました。<br>京都から長崎までの苦難の道のりを歩み殉職された「日本二十六聖人殉教者」に捧げられた教会です。<br><br>"Nakadaira Catholic Church" was founded in 1979 as the Church of the 26 Martyrs of Japan.
-The church is dedicated to the "26 Martyrs of Japan" who were martyred on the arduous journey from Kyoto to Nagasaki.</p>
+      <p>「カトリック中平教会」は、日本26聖人殉教者記念教会として1979年に創設されました。京都から長崎までの苦難の道のりを歩み殉職された「日本二十六聖人殉教者」に捧げられた教会です。<br><br>"Nakadaira Catholic Church" was founded in 1979 as the Church of the 26 Martyrs of Japan.The church is dedicated to the "26 Martyrs of Japan" who were martyred on the arduous journey from Kyoto to Nagasaki.</p>
    </div>
    <div class="profile_pic">
       <img src="{{ asset('/img/site01/profile.jpg') }}" alt="" class="content_pic">

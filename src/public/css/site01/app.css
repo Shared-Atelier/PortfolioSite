@@ -147,33 +147,30 @@ body {
 }
 @media screen and (max-width: 768px) {
   .container_howto {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 .container_howto .howto_discription {
-  width: 50%;
   padding: 0 50px;
+  flex-basis: 50%;
 }
 @media screen and (max-width: 768px) {
   .container_howto .howto_discription {
-    width: 100%;
-    padding: 0 30px 50px 30px;
+    flex-basis: 100%;
+    padding: 30px 30px 30px 30px;
+    order: 1;
   }
 }
 .container_howto .howto_pic {
-  width: 50%;
   overflow: hidden;
+  flex-basis: 50%;
 }
 @media screen and (max-width: 768px) {
-  .container_howto .howto_pic .content_pic {
-    width: 600px;
+  .container_howto .howto_pic {
+    flex-basis: 80%;
     margin: auto;
-  }
-}
-@media screen and (max-width: 400px) {
-  .container_howto .howto_pic .content_pic {
-    width: 380px;
-    margin: 0 auto;
+    order: 0;
   }
 }
 
@@ -184,33 +181,30 @@ body {
 }
 @media screen and (max-width: 768px) {
   .container_profile {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 .container_profile .profile_discription {
-  width: 50%;
   padding: 0 50px;
+  flex-basis: 50%;
 }
 @media screen and (max-width: 768px) {
   .container_profile .profile_discription {
-    width: 100%;
-    padding: 0 30px 50px 30px;
+    flex-basis: 100%;
+    padding: 30px 30px 30px 30px;
+    order: 1;
   }
 }
 .container_profile .profile_pic {
-  width: 50%;
   overflow: hidden;
+  flex-basis: 50%;
 }
 @media screen and (max-width: 768px) {
-  .container_profile .profile_pic .content_pic {
-    width: 600px;
-    margin-left: auto;
-  }
-}
-@media screen and (max-width: 400px) {
-  .container_profile .profile_pic .content_pic {
-    width: 380px;
-    margin-left: auto;
+  .container_profile .profile_pic {
+    flex-basis: 80%;
+    margin: auto;
+    order: 0;
   }
 }
 
@@ -221,33 +215,30 @@ body {
 }
 @media screen and (max-width: 768px) {
   .container_misa {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 .container_misa .misa_discription {
-  width: 50%;
   padding: 0 50px;
+  flex-basis: 50%;
 }
 @media screen and (max-width: 768px) {
   .container_misa .misa_discription {
-    width: 100%;
-    padding: 0 30px 50px 30px;
+    flex-basis: 100%;
+    padding: 30px 30px 30px 30px;
+    order: 1;
   }
 }
 .container_misa .misa_pic {
-  width: 50%;
   overflow: hidden;
+  flex-basis: 50%;
 }
 @media screen and (max-width: 768px) {
-  .container_misa .misa_pic .content_pic {
-    width: 600px;
-    margin-left: auto;
-  }
-}
-@media screen and (max-width: 400px) {
-  .container_misa .misa_pic .content_pic {
-    width: 380px;
-    margin-left: auto;
+  .container_misa .misa_pic {
+    flex-basis: 80%;
+    margin: auto;
+    order: 0;
   }
 }
 
