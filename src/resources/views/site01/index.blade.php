@@ -37,6 +37,12 @@
    </div>
 </div>
 
+<div class="container_qna">
+   <img src="{{ asset('/img/site01/stendglass.jpeg') }}" alt="">
+   <img src="{{ asset('/img/site01/choir.jpeg') }}" alt="">
+   <img src="{{ asset('/img/site01/saishi.jpeg') }}" alt="">
+</div>
+
 
 
 @endsection

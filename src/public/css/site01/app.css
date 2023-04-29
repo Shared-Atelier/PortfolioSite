@@ -246,6 +246,19 @@ body {
   width: 100%;
 }
 
+.container_qna {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.container_qna img {
+  width: 33.3333333333%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .container-footer-text {
   text-align: center;
   z-index: 999;

@@ -7,6 +7,8 @@
     <nav id="g-nav">
         <div id="g-nav-list">
             <ul>
+                <li><img src="{{ asset('/img/site01/gmenu_logo.png') }}" alt="" style="width: 60px; margin-bottom: 10px;"></li>
+                <li><span></span></li>
                 <li><a href="#"><h1>トップページ</h1></a></li>
                 <li><span></span></li>
                 <li><a href="#"><h1>初めての教会</h1></a></li>

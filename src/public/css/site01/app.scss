@@ -244,7 +244,20 @@ body {
 }
 
 .content_pic {
+    width: 100%;   
+}
+
+.container_qna {
     width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    img { 
+        width: calc(100% / 3);
+        height: 500px;
+        object-fit: cover;
+    }
 }
 
 // footer
