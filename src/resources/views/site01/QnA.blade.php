@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="hero">
-    <img src="{{ asset('/img/site01/profile2.jpg') }}" alt="" class="profile_hero">
+    <img src="{{ asset('/img/site01/stendglass2.jpeg') }}" alt="" class="qna_hero">
 </div>
 
 @endsection

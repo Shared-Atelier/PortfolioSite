@@ -5,6 +5,7 @@ body {
   color: #303030;
 }
 
+/* global navigation */
 #g-nav {
   position: fixed;
   z-index: 999;
@@ -51,6 +52,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: bold;
+}
+@media screen and (max-width: 400px) {
+  #g-nav li a h1 {
+    font-size: smaller;
+  }
 }
 
 #g-nav li span {
@@ -115,13 +121,23 @@ body {
   width: 100%;
 }
 
+/* hero mp4 */
 .hero_container {
   position: relative;
   width: 100%;
   height: 100%;
+  /* hero logo */
 }
 .hero_container .hero_mov {
   width: 100%;
+}
+@media screen and (max-width: 400px) {
+  .hero_container .hero_mov {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 .hero_container .hero_logo {
   z-index: 900;
@@ -135,18 +151,22 @@ body {
 }
 @media screen and (max-width: 400px) {
   .hero_container .hero_logo {
-    top: 25%;
-    width: 50%;
+    top: 38%;
+    width: 66.6666666667%;
   }
 }
 
+/* 初めての教会 */
 .container_howto {
   width: 100%;
   margin: 100px auto 0 auto;
   display: flex;
+  overflow: hidden;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .container_howto {
+    margin: 30px auto 0 auto;
     display: flex;
     flex-wrap: wrap;
   }
@@ -159,28 +179,86 @@ body {
   .container_howto .howto_discription {
     flex-basis: 100%;
     padding: 30px 30px 30px 30px;
+    font-size: small;
     order: 1;
   }
 }
 .container_howto .howto_pic {
   overflow: hidden;
   flex-basis: 50%;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .container_howto .howto_pic {
-    flex-basis: 80%;
+    flex-basis: 100%;
     margin: auto;
     order: 0;
   }
+}
+.container_howto .howto_pic .content_pic {
+  position: relative;
+  /* hover click pc*/
+}
+.container_howto .howto_pic .content_pic img {
+  width: 768px;
+}
+@media screen and (max-width: 768px) {
+  .container_howto .howto_pic .content_pic img {
+    width: 100%;
+  }
+}
+.container_howto .howto_pic .content_pic .caption {
+  font-size: 130%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .container_howto .howto_pic .content_pic .caption {
+    padding: 10px 30px;
+    border-top: double 4px #fff;
+    border-bottom: double 4px #fff;
+  }
+}
+.container_howto .howto_pic .content_pic .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+}
+@media screen and (max-width: 768px) {
+  .container_howto .howto_pic .content_pic .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+.container_howto .howto_pic .content_pic:hover .mask {
+  opacity: 1;
 }
 
 .container_profile {
   width: 100%;
   margin: 100px auto 0 auto;
   display: flex;
+  overflow: hidden;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .container_profile {
+    margin: 30px auto 0 auto;
     display: flex;
     flex-wrap: wrap;
   }
@@ -193,28 +271,86 @@ body {
   .container_profile .profile_discription {
     flex-basis: 100%;
     padding: 30px 30px 30px 30px;
+    font-size: small;
     order: 1;
   }
 }
 .container_profile .profile_pic {
   overflow: hidden;
   flex-basis: 50%;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .container_profile .profile_pic {
-    flex-basis: 80%;
+    flex-basis: 100%;
     margin: auto;
     order: 0;
   }
+}
+.container_profile .profile_pic .content_pic {
+  position: relative;
+  /* hover click pc*/
+}
+.container_profile .profile_pic .content_pic img {
+  width: 768px;
+}
+@media screen and (max-width: 768px) {
+  .container_profile .profile_pic .content_pic img {
+    width: 100%;
+  }
+}
+.container_profile .profile_pic .content_pic .caption {
+  font-size: 130%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .container_profile .profile_pic .content_pic .caption {
+    padding: 10px 30px;
+    border-top: double 4px #fff;
+    border-bottom: double 4px #fff;
+  }
+}
+.container_profile .profile_pic .content_pic .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+}
+@media screen and (max-width: 768px) {
+  .container_profile .profile_pic .content_pic .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+.container_profile .profile_pic .content_pic:hover .mask {
+  opacity: 1;
 }
 
 .container_misa {
   width: 100%;
   margin: 100px auto 0 auto;
   display: flex;
+  overflow: hidden;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .container_misa {
+    margin: 30px auto 0 auto;
     display: flex;
     flex-wrap: wrap;
   }
@@ -227,19 +363,74 @@ body {
   .container_misa .misa_discription {
     flex-basis: 100%;
     padding: 30px 30px 30px 30px;
+    font-size: small;
     order: 1;
   }
 }
 .container_misa .misa_pic {
   overflow: hidden;
   flex-basis: 50%;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .container_misa .misa_pic {
-    flex-basis: 80%;
+    flex-basis: 100%;
     margin: auto;
     order: 0;
   }
+}
+.container_misa .misa_pic .content_pic {
+  position: relative;
+  /* hover click pc*/
+}
+.container_misa .misa_pic .content_pic img {
+  width: 768px;
+}
+@media screen and (max-width: 768px) {
+  .container_misa .misa_pic .content_pic img {
+    width: 100%;
+  }
+}
+.container_misa .misa_pic .content_pic .caption {
+  font-size: 130%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .container_misa .misa_pic .content_pic .caption {
+    padding: 10px 30px;
+    border-top: double 4px #fff;
+    border-bottom: double 4px #fff;
+  }
+}
+.container_misa .misa_pic .content_pic .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+}
+@media screen and (max-width: 768px) {
+  .container_misa .misa_pic .content_pic .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+.container_misa .misa_pic .content_pic:hover .mask {
+  opacity: 1;
 }
 
 .content_pic {
@@ -252,11 +443,158 @@ body {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 400px) {
+  .container_qna {
+    display: block;
+  }
+}
 .container_qna img {
-  width: 33.3333333333%;
+  width: 100%;
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 400px) {
+  .container_qna img {
+    height: auto;
+    padding: 0;
+  }
+}
+.container_qna .qna1 {
+  position: relative;
+}
+.container_qna .qna1 h1 {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s ease;
+}
+.container_qna .qna1 h1:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 400px) {
+  .container_qna .qna1 h1 {
+    color: #fff;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.container_qna .qna2 {
+  position: relative;
+}
+.container_qna .qna2 h1 {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s ease;
+}
+.container_qna .qna2 h1:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 400px) {
+  .container_qna .qna2 h1 {
+    color: #fff;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.container_qna .qna3 {
+  position: relative;
+}
+.container_qna .qna3 h1 {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s ease;
+}
+.container_qna .qna3 h1:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 400px) {
+  .container_qna .qna3 h1 {
+    color: #fff;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.howto_hero {
+  width: 100%;
+}
+
+.profile_hero {
+  width: 100%;
+}
+
+.misa_hero {
+  width: 100%;
+}
+
+.qna_hero {
+  width: 100%;
+}
+
+.choir_hero {
+  width: 100%;
+}
+
+.saishi_hero {
+  width: 100%;
+}
+
+footer {
+  background-color: #ffffff;
 }
 
 .container-footer-text {
