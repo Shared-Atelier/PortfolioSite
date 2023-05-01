@@ -573,6 +573,88 @@ body {
   width: 100%;
 }
 
+.howto_text {
+  padding: 5%;
+}
+.howto_text .section1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.howto_text .section1 .section1_pic {
+  flex-basis: 40%;
+}
+.howto_text .section1 .section1_pic img {
+  width: 100%;
+  box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+.howto_text .section1 .section1_discription {
+  flex-basis: 60%;
+  padding: 5%;
+}
+.howto_text .section2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.howto_text .section2 .section2_pic {
+  flex-basis: 40%;
+}
+.howto_text .section2 .section2_pic img {
+  width: 100%;
+  box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+.howto_text .section2 .section2_discription {
+  flex-basis: 60%;
+  padding: 5%;
+}
+.howto_text .section3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.howto_text .section3 .section3_pic {
+  flex-basis: 40%;
+}
+.howto_text .section3 .section3_pic img {
+  width: 100%;
+  box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+.howto_text .section3 .section3_discription {
+  flex-basis: 60%;
+  padding: 5%;
+}
+.howto_text .section4 {
+  align-items: center;
+  margin-bottom: 70px;
+}
+.howto_text .section4 .section4_discription {
+  padding: 5%;
+}
+.howto_text .section5 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.howto_text .section5 .section5_pic {
+  flex-basis: 40%;
+}
+.howto_text .section5 .section5_pic img {
+  width: 100%;
+  box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+.howto_text .section5 .section5_discription {
+  flex-basis: 60%;
+  padding: 5%;
+}
+.howto_text .section6 {
+  align-items: center;
+  margin-bottom: 70px;
+}
+.howto_text .section6 .section6_discription {
+  padding: 5%;
+}
+
 .profile_hero {
   width: 100%;
 }

@@ -604,6 +604,108 @@ body {
     width: 100%;
 }
 
+.howto_text {
+    padding: 5%;
+
+    .section1 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 70px;
+
+        .section1_pic {
+            flex-basis: 40%;    
+
+            img {
+                width: 100%;
+                box-shadow: 10px 10px 30px 5px rgba(0,0,0,0.2);
+            }
+        }
+
+        .section1_discription {
+            flex-basis: 60%;
+            padding: 5%;
+        }
+    }
+
+    .section2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 70px;
+
+        .section2_pic {
+            flex-basis: 40%;    
+
+            img {
+                width: 100%;
+                box-shadow: 10px 10px 30px 5px rgba(0,0,0,0.2);
+            }
+        }
+
+        .section2_discription {
+            flex-basis: 60%;
+            padding: 5%;
+        }
+    }
+
+    .section3 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 70px;
+
+        .section3_pic {
+            flex-basis: 40%;    
+
+            img {
+                width: 100%;
+                box-shadow: 10px 10px 30px 5px rgba(0,0,0,0.2);
+            }
+        }
+
+        .section3_discription {
+            flex-basis: 60%;
+            padding: 5%;
+        }
+    }
+
+    .section4 {
+        align-items: center;
+        margin-bottom: 70px;
+
+        .section4_discription {
+            padding: 5%;    
+        }
+    }
+
+    .section5 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 70px;
+
+        .section5_pic {
+            flex-basis: 40%;    
+
+            img {
+                width: 100%;
+                box-shadow: 10px 10px 30px 5px rgba(0,0,0,0.2);
+            }
+        }
+
+        .section5_discription {
+            flex-basis: 60%;
+            padding: 5%;
+        }
+    }
+
+    .section6 {
+        align-items: center;
+        margin-bottom: 70px;
+
+        .section6_discription {
+            padding: 5%;    
+        }
+    }
+}
+
 // profile
 
 .profile_hero {
