@@ -208,6 +208,7 @@ body {
 
             img {
                 width: 768px;
+                box-shadow: 10px 10px 30px 5px rgba(0,0,0,0.2);
                 @media screen and (max-width:768px){
                     width: 100%;
                 }
@@ -308,6 +309,7 @@ body {
 
             img {
                 width: 768px;
+                box-shadow: 10px 10px 30px 5px rgba(0,0,0,0.2);
                 @media screen and (max-width:768px){
                     width: 100%;
                 }
@@ -407,6 +409,7 @@ body {
 
             img {
                 width: 768px;
+                box-shadow: 10px 10px 30px 5px rgba(0,0,0,0.2);
                 @media screen and (max-width:768px){
                     width: 100%;
                 }
@@ -799,7 +802,7 @@ body {
             display: inline-block;
             transition: all .4s;
             position: absolute;
-            left: 45%;
+            left: 4%;
             height: 1px;
             border-radius: 2px;
             background-color: #303030;
@@ -884,6 +887,13 @@ body {
 .history {
     line-height: 2em;
     padding: 10%;
+    h2 {
+        padding: 0.25em 0.5em;
+        color: #303030;
+        background: transparent;
+        border-left: solid 5px #303030;
+        text-align: left;
+    }
 }
 
 .profile {
@@ -1023,6 +1033,13 @@ body {
     
     h1,h2,h3,p {
         text-align: left;
+    }
+
+    h1,h2,h3 {
+        padding: 0.25em 0.5em;
+        color: #303030;
+        background: transparent;
+        border-left: solid 5px #303030;
     }
 
     span {

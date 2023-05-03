@@ -204,6 +204,7 @@ body {
 }
 .container_howto .howto_pic .content_pic img {
   width: 768px;
+  box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 768px) {
   .container_howto .howto_pic .content_pic img {
@@ -299,6 +300,7 @@ body {
 }
 .container_profile .profile_pic .content_pic img {
   width: 768px;
+  box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 768px) {
   .container_profile .profile_pic .content_pic img {
@@ -394,6 +396,7 @@ body {
 }
 .container_misa .misa_pic .content_pic img {
   width: 768px;
+  box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 768px) {
   .container_misa .misa_pic .content_pic img {
@@ -768,7 +771,7 @@ body {
   display: inline-block;
   transition: all 0.4s;
   position: absolute;
-  left: 45%;
+  left: 4%;
   height: 1px;
   border-radius: 2px;
   background-color: #303030;
@@ -849,6 +852,13 @@ body {
 .history {
   line-height: 2em;
   padding: 10%;
+}
+.history h2 {
+  padding: 0.25em 0.5em;
+  color: #303030;
+  background: transparent;
+  border-left: solid 5px #303030;
+  text-align: left;
 }
 
 .profile {
@@ -1015,6 +1025,12 @@ body {
 }
 .misa_info h1, .misa_info h2, .misa_info h3, .misa_info p {
   text-align: left;
+}
+.misa_info h1, .misa_info h2, .misa_info h3 {
+  padding: 0.25em 0.5em;
+  color: #303030;
+  background: transparent;
+  border-left: solid 5px #303030;
 }
 .misa_info span {
   display: inline-block;
