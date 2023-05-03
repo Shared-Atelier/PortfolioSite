@@ -881,52 +881,16 @@ body {
     width: 100%;
 }
 
-.section1 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0px;
-    @media screen and (max-width: 768px) {
-        flex-wrap: wrap;
-    }
-
-    .section1_pic {
-        flex-basis: 30%;
-        padding: 10%;
-        @media screen and (max-width:768px){
-            flex-basis: 100%;
-            order: 0;
-        }
-        .img {
-            text-align: center; 
-            img {
-                width: 300px;
-                box-shadow: 10px 10px 30px 5px rgba(0,0,0,0.2);
-            }
-        }
-        .text {
-            p {
-                text-align: center;
-            }          
-        }
-        
-    }
-
-    .section1_discription {
-        flex-basis: 70%;
-        padding: 0 5%;
-        line-height: 2em;
-        @media screen and (max-width:768px){
-            flex-basis: 100%;
-            order: 1;
-        }
-    }
+.history {
+    line-height: 2em;
+    padding: 10%;
 }
 
-.section2 {
+.profile {
     padding: 5%;
     line-height: 2em;
     margin-bottom: 70px;
-    .section2_1 {
+    .profile_1 {
         display: flex;
         margin-bottom: 30px;
         @media screen and (max-width:768px){
@@ -939,6 +903,7 @@ body {
             
             @media screen and (max-width:768px){
                 flex-basis: 100%;
+                text-align: left;
                 order: 0;
             }
         }
@@ -950,7 +915,7 @@ body {
             }
         }
     }
-    .section2_2 {
+    .profile_2 {
         display: flex;
         margin-bottom: 30px;
         @media screen and (max-width:768px){
@@ -961,6 +926,7 @@ body {
             text-align: center;
             @media screen and (max-width:768px){
                 flex-basis: 100%;
+                text-align: left;
                 order: 0;
             }
         }
@@ -972,7 +938,7 @@ body {
             }
         }
     }
-    .section2_3 {
+    .profile_3 {
         display: flex;
         margin-bottom: 30px;
         @media screen and (max-width:768px){
@@ -984,6 +950,7 @@ body {
             text-align: center;
             @media screen and (max-width:768px){
                 flex-basis: 100%;
+                text-align: left;
                 order: 0;
             }
         }
@@ -995,7 +962,7 @@ body {
             }
         }
     }
-    .section2_4 {
+    .profile_4 {
         display: flex;
         margin-bottom: 30px;
         @media screen and (max-width:768px){
@@ -1006,6 +973,7 @@ body {
             text-align: center;
             @media screen and (max-width:768px){
                 flex-basis: 100%;
+                text-align: left;
                 order: 0;
             }
         }
@@ -1017,7 +985,7 @@ body {
             }
         }
     }
-    .section2_5 {
+    .profile_5 {
         display: flex;
         @media screen and (max-width:768px){
             flex-wrap: wrap;
@@ -1028,6 +996,7 @@ body {
             text-align: center;
             @media screen and (max-width:768px){
                 flex-basis: 100%;
+                text-align: left;
                 order: 0;
             }
         }
@@ -1078,6 +1047,30 @@ body {
     width: 100%;
 }
 
+.headline {
+    padding: 5% 10% 5% 10%;
+}
+
+.qna_text {
+    padding: 0% 10% 5% 10%;
+    
+    .qna_text {
+        line-height: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .q {
+            display: flex;
+        }
+
+        .a {
+            display: flex;
+        }
+
+    }
+}
+
 // choir
 
 .choir_hero {
@@ -1088,6 +1081,48 @@ body {
 
 .saishi_hero {
     width: 100%;
+}
+
+.saishi {
+    padding: 2% 3% 0% 3%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 140px;
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        padding: 10% 0 0 0;
+    }
+
+    .saishi_pic {
+        flex-basis: 30%;
+        @media screen and (max-width:768px){
+            flex-basis: 100%;
+            order: 0;
+        }
+        .img {
+            text-align: center; 
+            img {
+                width: 300px;
+                box-shadow: 10px 10px 30px 5px rgba(0,0,0,0.2);
+            }
+        }
+        .text {
+            p {
+                text-align: center;
+            }          
+        }
+        
+    }
+
+    .saishi_discription {
+        flex-basis: 70%;
+        padding: 0 5%;
+        line-height: 2em;
+        @media screen and (max-width:768px){
+            flex-basis: 100%;
+            order: 1;
+        }
+    }
 }
 
 
