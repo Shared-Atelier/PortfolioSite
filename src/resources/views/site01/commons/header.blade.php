@@ -16,6 +16,12 @@
                 <li><a href="{{ route('profile') }}"><h1>プロフィールと歴史</h1></a></li>
                 <li><span></span></li>
                 <li><a href="{{ route('misa') }}"><h1>ミサのご案内</h1></a></li>
+                <li><span></span></li>
+                <li><a href="{{ route('QnA') }}"><h1>Q & A</h1></a></li>
+                <li><span></span></li>
+                <li><a href="{{ route('choir') }}"><h1>主日のお知らせ</h1></a></li>
+                <li><span></span></li>
+                <li><a href="{{ route('saishi') }}"><h1>祭司紹介</h1></a></li>
             </ul>
         </div>
     </nav>

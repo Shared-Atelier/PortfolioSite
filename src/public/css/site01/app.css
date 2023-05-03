@@ -175,6 +175,9 @@ body {
   padding: 0 50px;
   flex-basis: 50%;
 }
+.container_howto .howto_discription h1 {
+  font-size: 2em;
+}
 @media screen and (max-width: 768px) {
   .container_howto .howto_discription {
     flex-basis: 100%;
@@ -267,6 +270,9 @@ body {
   padding: 0 50px;
   flex-basis: 50%;
 }
+.container_profile .profile_discription h1 {
+  font-size: 2em;
+}
 @media screen and (max-width: 768px) {
   .container_profile .profile_discription {
     flex-basis: 100%;
@@ -358,6 +364,9 @@ body {
 .container_misa .misa_discription {
   padding: 0 50px;
   flex-basis: 50%;
+}
+.container_misa .misa_discription h1 {
+  font-size: 2em;
 }
 @media screen and (max-width: 768px) {
   .container_misa .misa_discription {
@@ -578,11 +587,34 @@ body {
 }
 .howto_text .section1 {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 70px;
 }
+.howto_text .section1 span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 45%;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #303030;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .howto_text .section1 span {
+    left: 9%;
+    width: 80%;
+  }
+}
 .howto_text .section1 .section1_pic {
   flex-basis: 40%;
+}
+@media screen and (max-width: 768px) {
+  .howto_text .section1 .section1_pic {
+    flex-basis: 100%;
+    order: 0;
+  }
 }
 .howto_text .section1 .section1_pic img {
   width: 100%;
@@ -590,15 +622,46 @@ body {
 }
 .howto_text .section1 .section1_discription {
   flex-basis: 60%;
-  padding: 5%;
+  padding: 5% 0% 5% 5%;
+  line-height: 2em;
+}
+@media screen and (max-width: 768px) {
+  .howto_text .section1 .section1_discription {
+    flex-basis: 100%;
+    padding: 5%;
+    order: 1;
+  }
 }
 .howto_text .section2 {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 70px;
 }
+.howto_text .section2 span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 4%;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #303030;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .howto_text .section2 span {
+    left: 9%;
+    width: 80%;
+  }
+}
 .howto_text .section2 .section2_pic {
   flex-basis: 40%;
+}
+@media screen and (max-width: 768px) {
+  .howto_text .section2 .section2_pic {
+    flex-basis: 100%;
+    order: 0;
+  }
 }
 .howto_text .section2 .section2_pic img {
   width: 100%;
@@ -606,15 +669,46 @@ body {
 }
 .howto_text .section2 .section2_discription {
   flex-basis: 60%;
-  padding: 5%;
+  padding: 5% 5% 5% 0%;
+  line-height: 2em;
+}
+@media screen and (max-width: 768px) {
+  .howto_text .section2 .section2_discription {
+    flex-basis: 100%;
+    padding: 5%;
+    order: 1;
+  }
 }
 .howto_text .section3 {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 70px;
 }
+.howto_text .section3 span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 45%;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #303030;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .howto_text .section3 span {
+    left: 9%;
+    width: 80%;
+  }
+}
 .howto_text .section3 .section3_pic {
   flex-basis: 40%;
+}
+@media screen and (max-width: 768px) {
+  .howto_text .section3 .section3_pic {
+    flex-basis: 100%;
+    order: 0;
+  }
 }
 .howto_text .section3 .section3_pic img {
   width: 100%;
@@ -622,22 +716,78 @@ body {
 }
 .howto_text .section3 .section3_discription {
   flex-basis: 60%;
-  padding: 5%;
+  padding: 5% 0% 5% 5%;
+  line-height: 2em;
+}
+@media screen and (max-width: 768px) {
+  .howto_text .section3 .section3_discription {
+    flex-basis: 100%;
+    padding: 5%;
+    order: 1;
+  }
 }
 .howto_text .section4 {
   align-items: center;
-  margin-bottom: 70px;
+  position: relative;
+  width: 70%;
+  margin: 0 auto 70px auto;
+  border: solid 3px #303030;
+  border-radius: 3px;
+  color: #303030;
+}
+@media screen and (max-width: 768px) {
+  .howto_text .section4 {
+    width: 95%;
+  }
+}
+.howto_text .section4 .section4_title {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 10px;
+  line-height: 1;
+  font-size: 1.3em;
+  background: #ffffff;
+  color: #303030;
 }
 .howto_text .section4 .section4_discription {
-  padding: 5%;
+  padding: 3% 5% 3% 5%;
+  line-height: 2em;
+}
+.howto_text .section4 .section4_text {
+  font-size: 0.9em;
 }
 .howto_text .section5 {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 70px;
 }
+.howto_text .section5 span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 45%;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #303030;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .howto_text .section5 span {
+    left: 9%;
+    width: 80%;
+  }
+}
 .howto_text .section5 .section5_pic {
   flex-basis: 40%;
+}
+@media screen and (max-width: 768px) {
+  .howto_text .section5 .section5_pic {
+    flex-basis: 100%;
+    order: 0;
+  }
 }
 .howto_text .section5 .section5_pic img {
   width: 100%;
@@ -645,21 +795,267 @@ body {
 }
 .howto_text .section5 .section5_discription {
   flex-basis: 60%;
-  padding: 5%;
+  padding: 5% 5% 5% 0%;
+  line-height: 2em;
+}
+@media screen and (max-width: 768px) {
+  .howto_text .section5 .section5_discription {
+    flex-basis: 100%;
+    padding: 5%;
+    order: 1;
+  }
 }
 .howto_text .section6 {
   align-items: center;
-  margin-bottom: 70px;
+  position: relative;
+  width: 70%;
+  margin: 0 auto 70px auto;
+  border: solid 3px #303030;
+  border-radius: 3px;
+  color: #303030;
+}
+@media screen and (max-width: 768px) {
+  .howto_text .section6 {
+    width: 95%;
+  }
+}
+.howto_text .section6 .section6_title {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 10px;
+  line-height: 1;
+  font-size: 1.3em;
+  background: #ffffff;
+  color: #303030;
 }
 .howto_text .section6 .section6_discription {
-  padding: 5%;
+  padding: 3% 5% 3% 5%;
+  line-height: 2em;
+}
+.howto_text .section6 .section6_text {
+  font-size: 0.9em;
+}
+.howto_text .section7 {
+  padding: 3% 5% 3% 5%;
+  margin-bottom: 70px;
 }
 
 .profile_hero {
   width: 100%;
 }
 
+.section1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 768px) {
+  .section1 {
+    flex-wrap: wrap;
+  }
+}
+.section1 .section1_pic {
+  flex-basis: 30%;
+  padding: 10%;
+}
+@media screen and (max-width: 768px) {
+  .section1 .section1_pic {
+    flex-basis: 100%;
+    order: 0;
+  }
+}
+.section1 .section1_pic .img {
+  text-align: center;
+}
+.section1 .section1_pic .img img {
+  width: 300px;
+  box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+.section1 .section1_pic .text p {
+  text-align: center;
+}
+.section1 .section1_discription {
+  flex-basis: 70%;
+  padding: 0 5%;
+  line-height: 2em;
+}
+@media screen and (max-width: 768px) {
+  .section1 .section1_discription {
+    flex-basis: 100%;
+    order: 1;
+  }
+}
+
+.section2 {
+  padding: 5%;
+  line-height: 2em;
+  margin-bottom: 70px;
+}
+.section2 .section2_1 {
+  display: flex;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .section2 .section2_1 {
+    flex-wrap: wrap;
+  }
+}
+.section2 .section2_1 .misa {
+  flex-basis: 33%;
+  margin: auto 0;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .section2 .section2_1 .misa {
+    flex-basis: 100%;
+    order: 0;
+  }
+}
+.section2 .section2_1 .misa_discription {
+  flex-basis: 67%;
+}
+@media screen and (max-width: 768px) {
+  .section2 .section2_1 .misa_discription {
+    flex-basis: 100%;
+    order: 1;
+  }
+}
+.section2 .section2_2 {
+  display: flex;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .section2 .section2_2 {
+    flex-wrap: wrap;
+  }
+}
+.section2 .section2_2 .church {
+  flex-basis: 33%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .section2 .section2_2 .church {
+    flex-basis: 100%;
+    order: 0;
+  }
+}
+.section2 .section2_2 .church_discription {
+  flex-basis: 67%;
+}
+@media screen and (max-width: 768px) {
+  .section2 .section2_2 .church_discription {
+    flex-basis: 100%;
+    order: 1;
+  }
+}
+.section2 .section2_3 {
+  display: flex;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .section2 .section2_3 {
+    flex-wrap: wrap;
+  }
+}
+.section2 .section2_3 .study {
+  flex-basis: 33%;
+  margin: auto 0;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .section2 .section2_3 .study {
+    flex-basis: 100%;
+    order: 0;
+  }
+}
+.section2 .section2_3 .study_discription {
+  flex-basis: 67%;
+}
+@media screen and (max-width: 768px) {
+  .section2 .section2_3 .study_discription {
+    flex-basis: 100%;
+    order: 1;
+  }
+}
+.section2 .section2_4 {
+  display: flex;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .section2 .section2_4 {
+    flex-wrap: wrap;
+  }
+}
+.section2 .section2_4 .ceremony {
+  flex-basis: 33%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .section2 .section2_4 .ceremony {
+    flex-basis: 100%;
+    order: 0;
+  }
+}
+.section2 .section2_4 .ceremony_discription {
+  flex-basis: 67%;
+}
+@media screen and (max-width: 768px) {
+  .section2 .section2_4 .ceremony_discription {
+    flex-basis: 100%;
+    order: 1;
+  }
+}
+.section2 .section2_5 {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .section2 .section2_5 {
+    flex-wrap: wrap;
+  }
+}
+.section2 .section2_5 .car {
+  flex-basis: 33%;
+  margin: auto 0;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .section2 .section2_5 .car {
+    flex-basis: 100%;
+    order: 0;
+  }
+}
+.section2 .section2_5 .car_discription {
+  flex-basis: 67%;
+}
+@media screen and (max-width: 768px) {
+  .section2 .section2_5 .car_discription {
+    flex-basis: 100%;
+    order: 1;
+  }
+}
+
 .misa_hero {
+  width: 100%;
+}
+
+.misa_info {
+  padding: 5%;
+  line-height: 2em;
+  margin-bottom: 70px;
+}
+.misa_info h1, .misa_info h2, .misa_info h3, .misa_info p {
+  text-align: left;
+}
+.misa_info span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 0%;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #303030;
   width: 100%;
 }
 
