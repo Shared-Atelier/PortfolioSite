@@ -46,7 +46,7 @@ body .splash {
   align-items: center;
 }
 .header__logo a img {
-  height: 65px;
+  height: 40px;
   margin: 10px 80px;
 }
 @media screen and (max-width: 768px) {
