@@ -7,7 +7,7 @@
 </div>
 
 <div class="howto_text">
-    <div class="section1">
+    <div class="section1 fadeUpTrigger">
         <div class="section1_pic">
             <img src="{{ asset('/img/site01/section1.jpeg') }}" alt="">
         </div>
@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <div class="section2">
+    <div class="section2 fadeUpTrigger">
         <div class="section2_discription">
             <p>聖堂はいつも開いています。</p>
             <span></span>
@@ -29,7 +29,7 @@
         </div>
     </div>
     
-    <div class="section3">
+    <div class="section3 fadeUpTrigger">
         <div class="section3_pic">
             <img src="{{ asset('/img/site01/section3.jpeg') }}" alt="">
         </div>
@@ -40,14 +40,14 @@
         </div>
     </div>
     
-    <div class="section4">
+    <div class="section4 fadeUpTrigger">
         <div class="section4_discription">
         <span class="section4_title">主の祈り</span>
             <p class="section4_text">天におられるわたしたちの父よ、<br>み名が聖とされますように。<br>み国が来ますように。<br>みこころが天に行われるとおり地にも行われますように。<br>わたしたちの日ごとの糧を今日もお与えください。<br>わたしたちの罪をおゆるしください。<br>わたしたちも人をゆるします。<br>わたしたちを誘惑におちいらせず、<br>悪からお救いください。<br>（アーメン）</p>
         </div>
     </div>
 
-    <div class="section5">
+    <div class="section5 fadeUpTrigger">
         <div class="section5_discription">
             <p>聖母マリア</p>
             <span></span>
@@ -58,7 +58,7 @@
         </div>
     </div>
     
-    <div class="section6">
+    <div class="section6 fadeUpTrigger">
         <div class="section6_discription">
         <span class="section6_title">アヴェ・マリアの祈り</span>
             <p class="section6_text">アヴェ、マリア、恵みに満ちた方、<br>主はあなたとともにおられます。<br>あなたは女のうちで祝福され、<br>ご胎内の御子イエスも祝福されています。<br>神の母聖マリア、わたしたち罪びとのために、<br>今も、死を迎える時も、お祈りください。<br>(アーメン)<br>み国が来ますように。<br>みこころが天に行われるとおり地にも行われますように。<br>わたしたちの日ごとの糧を今日も お与えください。<br>わたしたちの罪をおゆるしください。<br>わたしたちも人をゆるします。<br>わたしたちを誘惑におちいらせず、<br>（アーメン）</p>

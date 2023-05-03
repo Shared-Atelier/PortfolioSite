@@ -6,7 +6,7 @@
     <img src="{{ asset('/img/site01/saishi2.jpeg') }}" alt="" class="saishi_hero">
 </div>
 
-<div class="saishi">
+<div class="saishi fadeUpTrigger">
     <div class="saishi_pic">
         <div class="img">
             <img src="/img/site01/saishi.png" alt="">

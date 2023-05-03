@@ -6,12 +6,12 @@
     <img src="{{ asset('/img/site01/stendglass2.jpeg') }}" alt="" class="qna_hero">
 </div>
 
-<div class="headline">
+<div class="headline fadeUpTrigger">
     <h1>Q&A</h1>
     <p>カトリック教会に初めて訪れてみようとされる方が感じられる不安や疑問点、よく寄せられるご質問について、簡単にご説明いたします。<br>ここに書かれていないことでご質問なさりたい点や、さらに詳しくお聞きになりたいことがありましたら、「お問い合わせ」ページにある連絡先まで、お気軽にご質問をお寄せください。</p>
 </div>
 
-<div class="qna_text">
+<div class="qna_text fadeUpTrigger">
     <h2>教会ご訪問に関して</h2>
     <div qna_text>
         <div class="q">
