@@ -1032,27 +1032,136 @@ body {
 }
 
 .headline {
-  padding: 5% 10% 5% 10%;
+  margin: 30px 30px 100px 30px;
+  padding: 3% 10%;
+  position: relative;
+  border-top: solid 2px black;
+  border-bottom: solid black;
+}
+
+.headline:before, .headline:after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  width: 2px;
+  height: calc(100% + 17px);
+  background-color: black;
+}
+
+.headline:before {
+  left: 7px;
+}
+
+.headline:after {
+  right: 7px;
 }
 
 .qna_text {
   padding: 0% 10% 5% 10%;
 }
-.qna_text .qna_text {
-  line-height: 2em;
+.qna_text h2 {
+  margin-top: 60px;
+}
+.qna_text .q {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
+  margin: 6% 0 3% 0;
 }
-.qna_text .qna_text .q {
-  display: flex;
+@media screen and (max-width: 768px) {
+  .qna_text .q {
+    margin: 10% 0 10% 0;
+  }
 }
-.qna_text .qna_text .a {
+.qna_text .q .q_img {
+  flex-basis: 10%;
+  margin: auto auto;
+}
+@media screen and (max-width: 768px) {
+  .qna_text .q .q_img {
+    flex-basis: 20%;
+  }
+}
+.qna_text .q .q_img .q {
+  width: 30px;
+  vertical-align: middle;
+  text-align: center;
+}
+.qna_text .q .q_text {
+  flex-basis: 90%;
+  margin: auto auto;
+}
+@media screen and (max-width: 768px) {
+  .qna_text .q .q_text {
+    flex-basis: 80%;
+  }
+}
+.qna_text .q .q_text p {
+  margin-top: 0;
+  vertical-align: middle;
+}
+.qna_text .a {
   display: flex;
+  width: 100%;
+  margin: 0 0 3% 0;
+}
+@media screen and (max-width: 768px) {
+  .qna_text .a {
+    margin: 0 0 5% 0;
+  }
+}
+.qna_text .a .a_img {
+  flex-basis: 10%;
+  margin: auto auto;
+}
+@media screen and (max-width: 768px) {
+  .qna_text .a .a_img {
+    flex-basis: 20%;
+  }
+}
+.qna_text .a .a_img .a {
+  width: 30px;
+  vertical-align: middle;
+  text-align: center;
+}
+.qna_text .a .a_text {
+  flex-basis: 90%;
+  margin: auto auto;
+}
+@media screen and (max-width: 768px) {
+  .qna_text .a .a_text {
+    flex-basis: 80%;
+  }
+}
+.qna_text .a .a_text p {
+  margin-top: 0;
+  vertical-align: middle;
+}
+.qna_text span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 10%;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #303030;
+  width: 80%;
 }
 
 .choir_hero {
   width: 100%;
+}
+
+.choir_info {
+  padding: 5% 10% 0% 10%;
+}
+.choir_info h3 {
+  padding: 0.25em 0.5em;
+  color: #303030;
+  background: transparent;
+  border-left: solid 5px #303030;
+}
+.choir_info p {
+  line-height: 2em;
 }
 
 .saishi_hero {
@@ -1103,7 +1212,7 @@ body {
 }
 
 footer {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 .container-footer-text {

@@ -1048,33 +1048,137 @@ body {
 }
 
 .headline {
-    padding: 5% 10% 5% 10%;
+    margin: 30px 30px 100px 30px;
+    padding: 3% 10%;
+    position: relative;
+    border-top: solid 2px black;
+    border-bottom: solid black;
+}
+
+.headline:before, .headline:after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    width: 2px;
+    height: -webkit-calc(100% + 14px);
+    height: calc(100% + 17px);
+    background-color: black;
+}
+
+.headline:before {
+    left: 7px;
+}
+
+.headline:after {
+    right: 7px;
 }
 
 .qna_text {
     padding: 0% 10% 5% 10%;
-    
-    .qna_text {
-        line-height: 2em;
+    h2 {
+        margin-top: 60px;
+    }
+    .q {
         display: flex;
-        flex-wrap: wrap;
         width: 100%;
-
-        .q {
-            display: flex;
+        margin: 6% 0 3% 0;
+        @media screen and (max-width:768px){
+            margin: 10% 0 10% 0;
         }
 
-        .a {
-            display: flex;
+        .q_img {
+            flex-basis: 10%;
+            margin: auto auto;
+            @media screen and (max-width:768px){
+                flex-basis: 20%;
+            }
+            .q {
+                width: 30px;
+                vertical-align: middle;
+                text-align: center;
+                
+            }
         }
 
+        .q_text {
+            flex-basis: 90%;
+            margin: auto auto;
+            @media screen and (max-width:768px){
+                flex-basis: 80%;
+            }
+            p {
+                margin-top: 0;
+                vertical-align: middle;
+            }
+            
+        }
+    }
+    .a {
+        display: flex;
+        width: 100%;
+        margin: 0 0 3% 0;
+        @media screen and (max-width:768px){
+            margin: 0 0 5% 0;
+        }
+
+        .a_img {
+            flex-basis: 10%;
+            margin: auto auto;
+            @media screen and (max-width:768px){
+                flex-basis: 20%;
+            }
+            .a {
+                width: 30px;
+                vertical-align: middle;
+                text-align: center;
+                
+            }
+        }
+
+        .a_text {
+            flex-basis: 90%;
+            margin: auto auto;
+            @media screen and (max-width:768px){
+                flex-basis: 80%;
+            }
+            p {
+                margin-top: 0;
+                vertical-align: middle;
+            }
+            
+        }
+    }
+    span {
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 10%;
+        height: 1px;
+        border-radius: 2px;
+        background-color: #303030;
+        width: 80%;
     }
 }
+
 
 // choir
 
 .choir_hero {
     width: 100%;
+}
+
+.choir_info {
+    padding: 5% 10% 0% 10%;
+
+    h3 {
+        padding: 0.25em 0.5em;
+        color: #303030;
+        background: transparent;
+        border-left: solid 5px #303030;
+    }
+    p {
+        line-height: 2em;
+    }
 }
 
 // saishi
@@ -1131,7 +1235,7 @@ body {
 // footer
 
 footer {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
 }
 
 .container-footer-text {
