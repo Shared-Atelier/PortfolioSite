@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//IndexPage
+// IndexPage(Site00)
 
 Route::get('/', function () {
     return view('index');
@@ -22,7 +22,7 @@ Route::get('/', function () {
 Route::get('/contact/contact', 'App\Http\Controllers\ContactController@showContact')->name('contact');
 
 
-//Site01
+// Site01
 Route::get('/site01', function () {
     return view('site01.index');
 })->name('index01');
@@ -34,3 +34,8 @@ Route::get('/site01/misa', 'App\Http\Controllers\site01\IndexController@showMisa
 Route::get('/site01/QnA', 'App\Http\Controllers\site01\IndexController@showQnA')->name('QnA');
 Route::get('/site01/choir', 'App\Http\Controllers\site01\IndexController@showChoir')->name('choir');
 Route::get('/site01/saishi', 'App\Http\Controllers\site01\IndexController@showSaishi')->name('saishi');
+
+//Site02
+Route::get('/site02', function () {
+    return view('site02.index');
+})->name('index02');
