@@ -39,3 +39,8 @@ Route::get('/site01/saishi', 'App\Http\Controllers\site01\IndexController@showSa
 Route::get('/site02', function () {
     return view('site02.index');
 })->name('index02');
+
+//Site03
+Route::get('/site03', function () {
+    return view('site03.index');
+})->name('index03');

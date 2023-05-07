@@ -7,7 +7,7 @@
             <meta name="csrf-token" content="{{ csrf_token() }}">
             <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
             {{-- favicon --}}
-            <link rel="shortcut icon" href="{{ asset('/favicon.png') }}">
+            <link rel="shortcut icon" href="{{ asset('/favicon02.png') }}">
             <!-- Swiper.min.css -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
             <!--CSS -->
@@ -42,6 +42,12 @@
                     </div>
                     <div class="content__pic3">
                         <a href="#"><img src="{{ asset('/img/site02/site02.png') }}" alt="">
+                        <div class="mask">
+                            <div class="caption">PORTFOLIO SITE</div>
+                        </div></a>
+                    </div>
+                    <div class="content__pic4">
+                        <a href="#"><img src="{{ asset('/img/site02/site03.png') }}" alt="">
                         <div class="mask">
                             <div class="caption">PORTFOLIO SITE</div>
                         </div></a>
