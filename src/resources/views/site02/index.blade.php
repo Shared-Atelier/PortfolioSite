@@ -29,25 +29,25 @@
 
                 <div class="content">
                     <div class="content__pic1">
-                        <a href="#"><img src="{{ asset('/img/site02/site00.png') }}" alt="">
+                        <a href="{{ route('index00') }}" target="_blank"><img src="{{ asset('/img/site02/site00.png') }}" alt="">
                         <div class="mask">
                             <div class="caption">PORTFOLIO SITE</div>
                         </div></a>
                     </div>
                     <div class="content__pic2">
-                        <a href="#"><img src="{{ asset('/img/site02/site01.png') }}" alt="">
+                        <a href="{{ route('index01') }}" target="_blank"><img src="{{ asset('/img/site02/site01.png') }}" alt="">
                         <div class="mask">
                             <div class="caption">CATHORIC NAKAHIRA CHURCH</div>
                         </div></a>
                     </div>
                     <div class="content__pic3">
-                        <a href="#"><img src="{{ asset('/img/site02/site02.png') }}" alt="">
+                        <a href="{{ route('index02') }}" target="_blank"><img src="{{ asset('/img/site02/site02.png') }}" alt="">
                         <div class="mask">
                             <div class="caption">PORTFOLIO SITE</div>
                         </div></a>
                     </div>
                     <div class="content__pic4">
-                        <a href="#"><img src="{{ asset('/img/site02/site03.png') }}" alt="">
+                        <a href="{{ route('index03') }}" target="_blank"><img src="{{ asset('/img/site02/site03.png') }}" alt="">
                         <div class="mask">
                             <div class="caption">PORTFOLIO SITE</div>
                         </div></a>

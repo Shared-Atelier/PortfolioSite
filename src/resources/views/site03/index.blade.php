@@ -9,25 +9,25 @@
 
 <div class="content">
    <div class="item1">
-      <a href="#"><img src="/img/site03/site00.png" alt="">
+      <a href="{{ route('index00') }}" target="blank"><img src="/img/site03/site00.png" alt="">
       <div class="mask">
          <div class="caption">PORTFOLIOSITE</div>
       </div></a>
    </div>
    <div class="item2">
-      <a href="#"><img src="/img/site03/site01.png" alt="">
+      <a href="{{ route('index01') }}" target="blank"><img src="/img/site03/site01.png" alt="">
       <div class="mask">
          <div class="caption">CATHOLIC NAKAHIRA CHURCH</div>
       </div></a>
    </div>
    <div class="item3">
-      <a href="#"><img src="/img/site03/site02.png" alt="">
+      <a href="{{ route('index02') }}" target="blank"><img src="/img/site03/site02.png" alt="">
       <div class="mask">
          <div class="caption">PORTFOLIOSITE</div>
       </div></a>
    </div>
    <div class="item4">
-      <a href="#"><img src="/img/site03/site03.png" alt="">
+      <a href="{{ route('index03') }}" target="blank"><img src="/img/site03/site03.png" alt="">
       <div class="mask">
          <div class="caption">PORTFOLIOSITE</div>
       </div></a>

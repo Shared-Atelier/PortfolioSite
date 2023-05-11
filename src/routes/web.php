@@ -40,7 +40,22 @@ Route::get('/site02', function () {
     return view('site02.index');
 })->name('index02');
 
+Route::get('/index', 'App\Http\Controllers\site02\IndexController@showSite00')->name('index00');
+Route::get('/site01', 'App\Http\Controllers\site02\IndexController@showSite01')->name('index01');
+Route::get('/site02', 'App\Http\Controllers\site02\IndexController@showSite02')->name('index02');
+Route::get('/site03', 'App\Http\Controllers\site02\IndexController@showSite03')->name('index03');
+
 //Site03
 Route::get('/site03', function () {
     return view('site03.index');
 })->name('index03');
+
+Route::get('/index', 'App\Http\Controllers\site03\IndexController@showSite00')->name('index00');
+Route::get('/site01', 'App\Http\Controllers\site03\IndexController@showSite01')->name('index01');
+Route::get('/site02', 'App\Http\Controllers\site03\IndexController@showSite02')->name('index02');
+Route::get('/site03', 'App\Http\Controllers\site03\IndexController@showSite03')->name('index03');
+
+//Site04
+Route::get('/site04', function () {
+    return view('site04.index');
+})->name('index04');
