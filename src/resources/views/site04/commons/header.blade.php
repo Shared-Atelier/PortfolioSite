@@ -1,32 +1,36 @@
 <div class="header" id="header">
 
     <nav>
+
+        <!-- logo -->
         <div class="logo">
             <a href="{{ route('index04') }}">
                 <img src="{{ asset('img/site04/logo.png') }}" alt="" class="logo_pic">
             </a>
         </div>
-        <div class="menu">
+
+        <!-- header list pc-->
+        <div class="pc">
             <ul>
-                <li><a href="#">トップ</a></li>
+                <li><a href="{{ route('index04') }}">トップ</a></li>
                 <li class="has-child"><a href="#">練習帳</a>
                     <ul>
                         <li class="has-child"><a href="#">ひらがな</a>
                             <ul>
-                                <li><a href="#">ひらがなを美しく書く3つのコツ</a></li>
-                                <li><a href="#">ひらがな別 美しく書くコツ</a></li>
+                                <li><a href="{{ route('hiragana_tips') }}">ひらがなを美しく書く3つのコツ</a></li>
+                                <li><a href="{{ route('hiragana_lesson') }}">ひらがな別 美しく書くコツ</a></li>
                             </ul>
                         </li>
                         <li class="has-child"><a href="#">カタカナ</a>
                             <ul>
-                                <li><a href="#">カタカナを美しく書く3つのコツ</a></li>
-                                <li><a href="#">カタカナ別 美しく書くコツ</a></li>
+                                <li><a href="{{ route('katakana_tips') }}">カタカナを美しく書く3つのコツ</a></li>
+                                <li><a href="{{ route('katakana_lesson') }}">カタカナ別 美しく書くコツ</a></li>
                             </ul>
                         </li>
                         <li class="has-child"><a href="#">漢字</a>
                             <ul>
-                                <li><a href="#">漢字を美しく書く3つのコツ</a></li>
-                                <li><a href="#">部首/部分別 美しく書くコツ</a></li>
+                                <li><a href="{{ route('kanji_tips') }}">漢字を美しく書く3つのコツ</a></li>
+                                <li><a href="{{ route('kanji_lesson') }}">部首/部分別 美しく書くコツ</a></li>
                             </ul>
                         </li>
                     </ul>

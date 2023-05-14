@@ -59,3 +59,10 @@ Route::get('/site03', 'App\Http\Controllers\site03\IndexController@showSite03')-
 Route::get('/site04', function () {
     return view('site04.index');
 })->name('index04');
+
+Route::get('/site04/hiragana_tips', 'App\Http\Controllers\site04\IndexController@showHiraganaTips')->name('hiragana_tips');
+Route::get('/site04/hiragana_lesson', 'App\Http\Controllers\site04\IndexController@showHiraganaLesson')->name('hiragana_lesson');
+Route::get('/site04/katakana_tips', 'App\Http\Controllers\site04\IndexController@showKatakanaTips')->name('katakana_tips');
+Route::get('/site04/katakana_lesson', 'App\Http\Controllers\site04\IndexController@showKatakanaLesson')->name('katakana_lesson');
+Route::get('/site04/kanji_tips', 'App\Http\Controllers\site04\IndexController@showKanjiTips')->name('kanji_tips');
+Route::get('/site04/kanji_lesson', 'App\Http\Controllers\site04\IndexController@showKanjiLesson')->name('kanji_lesson');

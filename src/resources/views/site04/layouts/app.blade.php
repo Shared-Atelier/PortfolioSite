@@ -12,13 +12,16 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
             <!-- loading -->
             <link rel="stylesheet" href="{{ asset('/css/site04/loading.css') }}" type="text/css">
+            <!-- tab -->
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/site04/tab.css') }}">
+            <!-- background -->
         </head>
 
         <body>
         
         <!-- loading -->
         <div id="splash">
-        <div id="splash_logo"><img src="img/site04/loading.png" alt="" class="fadeUp"></div><!--画像部分は適宜差し換えてください-->
+        <div id="splash_logo"><img src="{{ asset('img/site04/loading.png') }}" alt="" class="fadeUp"></div><!--画像部分は適宜差し換えてください-->
         <!--/splash--></div>
 
 
@@ -28,13 +31,14 @@
 
             <footer>@include('site04.commons.footer')</footer>
             
-            
 
             <!-- Scripts -->
             <script src="{{ asset('/js/site04/app.js') }}"></script>
             <!-- loading scripts -->
             <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
             <script src="{{ asset('/js/site04/loading.js') }}"></script>
+            <!-- tab -->
+            <script src="{{ asset('js/site04/tab.js') }}"></script>
             <!-- jQuery -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         </body>

@@ -3,6 +3,9 @@
 body {
     margin: 0;
     background-color: #f2f0ea;
+    font-family: 筑紫A丸ゴシック, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 /////////////// header ///////////////
@@ -16,19 +19,18 @@ body {
     left: 3%;
     transform: translate(0, -50%);
     .logo_pic {
+        z-index: 100;
         width: 180px;
-    }
-    
+    }   
 }
 
 // nav menu
 
 nav {
-    // display: flex;
-    // background:#333;
     color: #303030;
     text-align: center;
     position: relative;
+    height: 70px;
   }
   /*ナビゲーションを横並びに*/
   nav ul {
@@ -149,8 +151,7 @@ nav {
   nav li.has-child ul ul li a:active {
     background: #fec464;
   }
-  
-  
+
   /*==768px以下の形状*/
   
   @media screen and (max-width:768px) {
@@ -200,12 +201,698 @@ nav {
 // hero
 
 .hero_container {
+    position: relative;
     height: 600px;
     text-align: center;
     
     .hero {
-        margin: 150px auto 150px auto;
         height: 300px;
+        margin: 150px auto 150px auto;
+    }
+
+    .hero_sub {
+        width: 200px;
+        position: absolute;
+        right: 10%;
+        top: 50%;
+    }
+
+    .circle {
+        position: absolute;
+        left : 30%;
+        top: 7%; 
+        padding: 5%;
+        width: 180px;
+        height: 180px;
+        margin: 0 -15px;
+        mix-blend-mode: multiply;
+    }
+    .circle {
+        background: #fec464;
+        border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+        opacity : 1;
+        animation: circle 30s ease 0s infinite;
+        @keyframes circle {
+            0% {
+                border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+            }
+            14% {
+                border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+            }
+            28% {
+                border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+            }
+            42% {
+                border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+            }
+            56% {
+                border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+            }
+            70% {
+                border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+            }
+            84% {
+                border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+            }
+            100% {
+                border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+            }
+        }
     }
 }
 
+// index_hiragana
+
+.index_hiragana {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px 1%;
+
+    img {
+        width: 150px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+    }
+    h1 {
+        font-size: 60px;
+    }
+}
+
+.index_katakana {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px 1%;
+
+    img {
+        width: 150px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+    }
+}
+
+.index_kanji {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px 1%;
+
+    img {
+        width: 150px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+    }
+}
+
+/////////////// hiragana ///////////////
+
+// hiragana_tips
+
+.hiragana_tips_discription {
+    width: 70%;
+    position: relative;
+    margin: 100px auto;
+    padding: 50px 40px;
+    border: solid 3px #303030;
+    border-radius: 8px;
+
+    .box-title {
+        position: absolute;
+        display: inline-block;
+        top: -18px;
+        left: 40px;
+        padding: 0 9px;
+        line-height: 1;
+        font-size: 30px;
+        background-color: #f2f0ea;
+        color: #303030;
+        font-weight: bold;
+    }
+
+    img {
+        width: 100%;
+        margin: 20px auto;
+        border-radius: 30px;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    h1 {
+        position: relative;
+        padding: 0.6em;
+        background: #d8d6cd;
+    }
+
+    h1:after {
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: 30px;
+        border: 15px solid transparent;
+        border-top: 15px solid #d8d6cd;
+        width: 0;
+        height: 0;
+    }
+}
+
+.hiragana_tips_contents {
+
+    width: 70%;
+    margin: 0 auto 100px auto;
+    text-align:center;
+    
+    h1 {
+        position: relative;
+        display: inline-block;
+        padding: 0 45px;
+        margin: 50px auto;
+      }
+
+      h1:before, h1:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        width: 44px;
+        height: 2px;
+        background-color: black;
+        -webkit-transform: rotate(-60deg);
+        transform: rotate(-60deg);
+      }
+
+      h1:before {
+        left:0;
+      }
+      
+      h1:after {
+        right: 0;
+      }
+
+    .hiragana_tips_contents_panel {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 30px 1%;
+    
+        img {
+            width: 150px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+        }
+    }    
+}
+
+// hiragana_lesson
+
+.hiragana_lesson_discription {
+    width: 70%;
+    position: relative;
+    margin: 100px auto;
+    padding: 50px 40px;
+    border: solid 3px #303030;
+    border-radius: 8px;
+
+    .box-title {
+        position: absolute;
+        display: inline-block;
+        top: -18px;
+        left: 40px;
+        padding: 0 9px;
+        line-height: 1;
+        font-size: 30px;
+        background-color: #f2f0ea;
+        color: #303030;
+        font-weight: bold;
+    }
+
+    img {
+        display: block;
+        width: 50%;
+        margin: 20px auto 20px auto;
+        border-radius: 30px;
+        
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    h1 {
+        position: relative;
+        padding: 0.6em;
+        background: #d8d6cd;
+    }
+
+    h1:after {
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: 30px;
+        border: 15px solid transparent;
+        border-top: 15px solid #d8d6cd;
+        width: 0;
+        height: 0;
+    }
+}
+
+.hiragana_lesson_contents {
+
+    width: 70%;
+    margin: 0 auto 100px auto;
+    text-align:center;
+    
+    h1 {
+        position: relative;
+        display: inline-block;
+        padding: 0 45px;
+        margin: 50px auto;
+      }
+
+      h1:before, h1:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        width: 44px;
+        height: 2px;
+        background-color: black;
+        -webkit-transform: rotate(-60deg);
+        transform: rotate(-60deg);
+      }
+
+      h1:before {
+        left:0;
+      }
+      
+      h1:after {
+        right: 0;
+      }
+
+    .hiragana_lesson_contents_panel {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 30px 1%;
+    
+        img {
+            width: 150px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+        }
+    }    
+}
+
+/////////////// katakana ///////////////
+
+// katakana_tips
+
+.katakana_tips_discription {
+    width: 70%;
+    position: relative;
+    margin: 100px auto;
+    padding: 50px 40px;
+    border: solid 3px #303030;
+    border-radius: 8px;
+
+    .box-title {
+        position: absolute;
+        display: inline-block;
+        top: -18px;
+        left: 40px;
+        padding: 0 9px;
+        line-height: 1;
+        font-size: 30px;
+        background-color: #f2f0ea;
+        color: #303030;
+        font-weight: bold;
+    }
+
+    img {
+        width: 100%;
+        margin: 20px auto;
+        border-radius: 30px;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    h1 {
+        position: relative;
+        padding: 0.6em;
+        background: #d8d6cd;
+    }
+
+    h1:after {
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: 30px;
+        border: 15px solid transparent;
+        border-top: 15px solid #d8d6cd;
+        width: 0;
+        height: 0;
+    }
+}
+
+.katakana_tips_contents {
+
+    width: 70%;
+    margin: 0 auto 100px auto;
+    text-align: center;
+    
+    h1 {
+        position: relative;
+        display: inline-block;
+        padding: 0 45px;
+        margin: 50px auto;
+      }
+
+      h1:before, h1:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        width: 44px;
+        height: 2px;
+        background-color: black;
+        -webkit-transform: rotate(-60deg);
+        transform: rotate(-60deg);
+      }
+
+      h1:before {
+        left:0;
+      }
+      
+      h1:after {
+        right: 0;
+      }
+
+    .katakana_tips_contents_panel {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 30px 1%;
+    
+        img {
+            width: 150px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+        }
+    }    
+}
+
+// katakana_lesson
+
+.katakana_lesson_discription {
+    width: 70%;
+    position: relative;
+    margin: 100px auto;
+    padding: 50px 40px;
+    border: solid 3px #303030;
+    border-radius: 8px;
+
+    .box-title {
+        position: absolute;
+        display: inline-block;
+        top: -18px;
+        left: 40px;
+        padding: 0 9px;
+        line-height: 1;
+        font-size: 30px;
+        background-color: #f2f0ea;
+        color: #303030;
+        font-weight: bold;
+    }
+
+    img {
+        display: block;
+        width: 50%;
+        margin: 20px auto 20px auto;
+        border-radius: 30px;
+        
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    h1 {
+        position: relative;
+        padding: 0.6em;
+        background: #d8d6cd;
+    }
+
+    h1:after {
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: 30px;
+        border: 15px solid transparent;
+        border-top: 15px solid #d8d6cd;
+        width: 0;
+        height: 0;
+    }
+}
+
+.katakana_lesson_contents {
+
+    width: 70%;
+    margin: 0 auto 100px auto;
+    text-align:center;
+    
+    h1 {
+        position: relative;
+        display: inline-block;
+        padding: 0 45px;
+        margin: 50px auto;
+      }
+
+      h1:before, h1:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        width: 44px;
+        height: 2px;
+        background-color: black;
+        -webkit-transform: rotate(-60deg);
+        transform: rotate(-60deg);
+      }
+
+      h1:before {
+        left:0;
+      }
+      
+      h1:after {
+        right: 0;
+      }
+
+    .katakana_lesson_contents_panel {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 30px 1%;
+    
+        img {
+            width: 150px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+        }
+    }    
+}
+
+
+/////////////// kanji ///////////////
+
+// kanji_tips
+
+.kanji_tips_discription {
+    width: 70%;
+    position: relative;
+    margin: 100px auto;
+    padding: 50px 40px;
+    border: solid 3px #303030;
+    border-radius: 8px;
+
+    .box-title {
+        position: absolute;
+        display: inline-block;
+        top: -18px;
+        left: 40px;
+        padding: 0 9px;
+        line-height: 1;
+        font-size: 30px;
+        background-color: #f2f0ea;
+        color: #303030;
+        font-weight: bold;
+    }
+
+    img {
+        width: 100%;
+        margin: 20px auto;
+        border-radius: 30px;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    h1 {
+        position: relative;
+        padding: 0.6em;
+        background: #d8d6cd;
+    }
+
+    h1:after {
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: 30px;
+        border: 15px solid transparent;
+        border-top: 15px solid #d8d6cd;
+        width: 0;
+        height: 0;
+    }
+}
+
+.kanji_tips_contents {
+
+    width: 70%;
+    margin: 0 auto 100px auto;
+    text-align: center;
+    
+    h1 {
+        position: relative;
+        display: inline-block;
+        padding: 0 45px;
+        margin: 50px auto;
+      }
+
+      h1:before, h1:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        width: 44px;
+        height: 2px;
+        background-color: black;
+        -webkit-transform: rotate(-60deg);
+        transform: rotate(-60deg);
+      }
+
+      h1:before {
+        left:0;
+      }
+      
+      h1:after {
+        right: 0;
+      }
+
+    .kanji_tips_contents_panel {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 30px 1%;
+    
+        img {
+            width: 150px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+        }
+    }    
+}
+
+// kanji_lesson
+
+.kanji_lesson_discription {
+    width: 70%;
+    position: relative;
+    margin: 100px auto;
+    padding: 50px 40px;
+    border: solid 3px #303030;
+    border-radius: 8px;
+
+    .box-title {
+        position: absolute;
+        display: inline-block;
+        top: -18px;
+        left: 40px;
+        padding: 0 9px;
+        line-height: 1;
+        font-size: 30px;
+        background-color: #f2f0ea;
+        color: #303030;
+        font-weight: bold;
+    }
+
+    img {
+        display: block;
+        width: 50%;
+        margin: 20px auto 20px auto;
+        border-radius: 30px;
+        
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    h1 {
+        position: relative;
+        padding: 0.6em;
+        background: #d8d6cd;
+    }
+
+    h1:after {
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: 30px;
+        border: 15px solid transparent;
+        border-top: 15px solid #d8d6cd;
+        width: 0;
+        height: 0;
+    }
+}
+
+.kanji_lesson_contents {
+
+    width: 70%;
+    margin: 0 auto 100px auto;
+    text-align:center;
+    
+    h1 {
+        position: relative;
+        display: inline-block;
+        padding: 0 45px;
+        margin: 50px auto;
+      }
+
+      h1:before, h1:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        width: 44px;
+        height: 2px;
+        background-color: black;
+        -webkit-transform: rotate(-60deg);
+        transform: rotate(-60deg);
+      }
+
+      h1:before {
+        left:0;
+      }
+      
+      h1:after {
+        right: 0;
+      }
+
+    .kanji_lesson_contents_panel {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 30px 1%;
+    
+        img {
+            width: 150px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+        }
+    }    
+}
