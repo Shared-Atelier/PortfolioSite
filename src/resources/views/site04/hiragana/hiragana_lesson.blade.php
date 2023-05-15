@@ -2,16 +2,16 @@
 
 @section('content')
 
-<div class="hiragana_lesson_discription">
+<div class="lesson_discription">
     <span class="box-title">ひらがなの練習</span>
     <img src="{{ asset('/img/site04/hiragana_lesson.png') }}" alt="">
     <p>ここでは、ひらがなを1文字ずつ練習します。ひらがなを美しく書く3つのコツ「曲線を美しく」「つながりを意識する」「外枠の形をイメージする」に注意しながら、ゆっくり書いてみましょう。</p>
 </div>
 
-<div class="hiragana_lesson_contents">
+<div class="lesson_contents">
     <h1>ひらがな別 美しく書くコツ</h1>
-    <div class="hiragana_lesson_contents_panel">
-    <img src="{{ asset('/img/site04/あ.png') }}" alt="">
+    <div class="lesson_contents_panel">
+      <img src="{{ asset('/img/site04/あ.png') }}" alt="">
       <img src="{{ asset('/img/site04/い.png') }}" alt="">
       <img src="{{ asset('/img/site04/う.png') }}" alt="">
       <img src="{{ asset('/img/site04/え.png') }}" alt="">

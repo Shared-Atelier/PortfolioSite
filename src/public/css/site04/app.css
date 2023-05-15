@@ -271,7 +271,7 @@ nav li.has-child ul ul li a:active {
   box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
-.hiragana_tips_discription {
+.tips_discription {
   width: 70%;
   position: relative;
   margin: 100px auto;
@@ -279,7 +279,7 @@ nav li.has-child ul ul li a:active {
   border: solid 3px #303030;
   border-radius: 8px;
 }
-.hiragana_tips_discription .box-title {
+.tips_discription .box-title {
   position: absolute;
   display: inline-block;
   top: -18px;
@@ -291,20 +291,20 @@ nav li.has-child ul ul li a:active {
   color: #303030;
   font-weight: bold;
 }
-.hiragana_tips_discription img {
+.tips_discription img {
   width: 100%;
   margin: 20px auto;
   border-radius: 30px;
 }
-.hiragana_tips_discription p {
+.tips_discription p {
   font-size: 1.4em;
 }
-.hiragana_tips_discription h1 {
+.tips_discription h1 {
   position: relative;
   padding: 0.6em;
   background: #d8d6cd;
 }
-.hiragana_tips_discription h1:after {
+.tips_discription h1:after {
   position: absolute;
   content: "";
   top: 100%;
@@ -315,18 +315,18 @@ nav li.has-child ul ul li a:active {
   height: 0;
 }
 
-.hiragana_tips_contents {
+.tips_contents {
   width: 70%;
   margin: 0 auto 100px auto;
   text-align: center;
 }
-.hiragana_tips_contents h1 {
+.tips_contents h1 {
   position: relative;
   display: inline-block;
   padding: 0 45px;
   margin: 50px auto;
 }
-.hiragana_tips_contents h1:before, .hiragana_tips_contents h1:after {
+.tips_contents h1:before, .tips_contents h1:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -336,24 +336,24 @@ nav li.has-child ul ul li a:active {
   background-color: black;
   transform: rotate(-60deg);
 }
-.hiragana_tips_contents h1:before {
+.tips_contents h1:before {
   left: 0;
 }
-.hiragana_tips_contents h1:after {
+.tips_contents h1:after {
   right: 0;
 }
-.hiragana_tips_contents .hiragana_tips_contents_panel {
+.tips_contents .tips_contents_panel {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 30px 1%;
 }
-.hiragana_tips_contents .hiragana_tips_contents_panel img {
+.tips_contents .tips_contents_panel img {
   width: 150px;
   border-radius: 15px;
   box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
-.hiragana_lesson_discription {
+.lesson_discription {
   width: 70%;
   position: relative;
   margin: 100px auto;
@@ -361,7 +361,7 @@ nav li.has-child ul ul li a:active {
   border: solid 3px #303030;
   border-radius: 8px;
 }
-.hiragana_lesson_discription .box-title {
+.lesson_discription .box-title {
   position: absolute;
   display: inline-block;
   top: -18px;
@@ -373,21 +373,21 @@ nav li.has-child ul ul li a:active {
   color: #303030;
   font-weight: bold;
 }
-.hiragana_lesson_discription img {
+.lesson_discription img {
   display: block;
   width: 50%;
   margin: 20px auto 20px auto;
   border-radius: 30px;
 }
-.hiragana_lesson_discription p {
+.lesson_discription p {
   font-size: 1.4em;
 }
-.hiragana_lesson_discription h1 {
+.lesson_discription h1 {
   position: relative;
   padding: 0.6em;
   background: #d8d6cd;
 }
-.hiragana_lesson_discription h1:after {
+.lesson_discription h1:after {
   position: absolute;
   content: "";
   top: 100%;
@@ -398,18 +398,18 @@ nav li.has-child ul ul li a:active {
   height: 0;
 }
 
-.hiragana_lesson_contents {
+.lesson_contents {
   width: 70%;
   margin: 0 auto 100px auto;
   text-align: center;
 }
-.hiragana_lesson_contents h1 {
+.lesson_contents h1 {
   position: relative;
   display: inline-block;
   padding: 0 45px;
   margin: 50px auto;
 }
-.hiragana_lesson_contents h1:before, .hiragana_lesson_contents h1:after {
+.lesson_contents h1:before, .lesson_contents h1:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -419,348 +419,18 @@ nav li.has-child ul ul li a:active {
   background-color: black;
   transform: rotate(-60deg);
 }
-.hiragana_lesson_contents h1:before {
+.lesson_contents h1:before {
   left: 0;
 }
-.hiragana_lesson_contents h1:after {
+.lesson_contents h1:after {
   right: 0;
 }
-.hiragana_lesson_contents .hiragana_lesson_contents_panel {
+.lesson_contents .lesson_contents_panel {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 30px 1%;
 }
-.hiragana_lesson_contents .hiragana_lesson_contents_panel img {
-  width: 150px;
-  border-radius: 15px;
-  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
-}
-
-.katakana_tips_discription {
-  width: 70%;
-  position: relative;
-  margin: 100px auto;
-  padding: 50px 40px;
-  border: solid 3px #303030;
-  border-radius: 8px;
-}
-.katakana_tips_discription .box-title {
-  position: absolute;
-  display: inline-block;
-  top: -18px;
-  left: 40px;
-  padding: 0 9px;
-  line-height: 1;
-  font-size: 30px;
-  background-color: #f2f0ea;
-  color: #303030;
-  font-weight: bold;
-}
-.katakana_tips_discription img {
-  width: 100%;
-  margin: 20px auto;
-  border-radius: 30px;
-}
-.katakana_tips_discription p {
-  font-size: 1.4em;
-}
-.katakana_tips_discription h1 {
-  position: relative;
-  padding: 0.6em;
-  background: #d8d6cd;
-}
-.katakana_tips_discription h1:after {
-  position: absolute;
-  content: "";
-  top: 100%;
-  left: 30px;
-  border: 15px solid transparent;
-  border-top: 15px solid #d8d6cd;
-  width: 0;
-  height: 0;
-}
-
-.katakana_tips_contents {
-  width: 70%;
-  margin: 0 auto 100px auto;
-  text-align: center;
-}
-.katakana_tips_contents h1 {
-  position: relative;
-  display: inline-block;
-  padding: 0 45px;
-  margin: 50px auto;
-}
-.katakana_tips_contents h1:before, .katakana_tips_contents h1:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  display: inline-block;
-  width: 44px;
-  height: 2px;
-  background-color: black;
-  transform: rotate(-60deg);
-}
-.katakana_tips_contents h1:before {
-  left: 0;
-}
-.katakana_tips_contents h1:after {
-  right: 0;
-}
-.katakana_tips_contents .katakana_tips_contents_panel {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 30px 1%;
-}
-.katakana_tips_contents .katakana_tips_contents_panel img {
-  width: 150px;
-  border-radius: 15px;
-  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
-}
-
-.katakana_lesson_discription {
-  width: 70%;
-  position: relative;
-  margin: 100px auto;
-  padding: 50px 40px;
-  border: solid 3px #303030;
-  border-radius: 8px;
-}
-.katakana_lesson_discription .box-title {
-  position: absolute;
-  display: inline-block;
-  top: -18px;
-  left: 40px;
-  padding: 0 9px;
-  line-height: 1;
-  font-size: 30px;
-  background-color: #f2f0ea;
-  color: #303030;
-  font-weight: bold;
-}
-.katakana_lesson_discription img {
-  display: block;
-  width: 50%;
-  margin: 20px auto 20px auto;
-  border-radius: 30px;
-}
-.katakana_lesson_discription p {
-  font-size: 1.4em;
-}
-.katakana_lesson_discription h1 {
-  position: relative;
-  padding: 0.6em;
-  background: #d8d6cd;
-}
-.katakana_lesson_discription h1:after {
-  position: absolute;
-  content: "";
-  top: 100%;
-  left: 30px;
-  border: 15px solid transparent;
-  border-top: 15px solid #d8d6cd;
-  width: 0;
-  height: 0;
-}
-
-.katakana_lesson_contents {
-  width: 70%;
-  margin: 0 auto 100px auto;
-  text-align: center;
-}
-.katakana_lesson_contents h1 {
-  position: relative;
-  display: inline-block;
-  padding: 0 45px;
-  margin: 50px auto;
-}
-.katakana_lesson_contents h1:before, .katakana_lesson_contents h1:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  display: inline-block;
-  width: 44px;
-  height: 2px;
-  background-color: black;
-  transform: rotate(-60deg);
-}
-.katakana_lesson_contents h1:before {
-  left: 0;
-}
-.katakana_lesson_contents h1:after {
-  right: 0;
-}
-.katakana_lesson_contents .katakana_lesson_contents_panel {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 30px 1%;
-}
-.katakana_lesson_contents .katakana_lesson_contents_panel img {
-  width: 150px;
-  border-radius: 15px;
-  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
-}
-
-.kanji_tips_discription {
-  width: 70%;
-  position: relative;
-  margin: 100px auto;
-  padding: 50px 40px;
-  border: solid 3px #303030;
-  border-radius: 8px;
-}
-.kanji_tips_discription .box-title {
-  position: absolute;
-  display: inline-block;
-  top: -18px;
-  left: 40px;
-  padding: 0 9px;
-  line-height: 1;
-  font-size: 30px;
-  background-color: #f2f0ea;
-  color: #303030;
-  font-weight: bold;
-}
-.kanji_tips_discription img {
-  width: 100%;
-  margin: 20px auto;
-  border-radius: 30px;
-}
-.kanji_tips_discription p {
-  font-size: 1.4em;
-}
-.kanji_tips_discription h1 {
-  position: relative;
-  padding: 0.6em;
-  background: #d8d6cd;
-}
-.kanji_tips_discription h1:after {
-  position: absolute;
-  content: "";
-  top: 100%;
-  left: 30px;
-  border: 15px solid transparent;
-  border-top: 15px solid #d8d6cd;
-  width: 0;
-  height: 0;
-}
-
-.kanji_tips_contents {
-  width: 70%;
-  margin: 0 auto 100px auto;
-  text-align: center;
-}
-.kanji_tips_contents h1 {
-  position: relative;
-  display: inline-block;
-  padding: 0 45px;
-  margin: 50px auto;
-}
-.kanji_tips_contents h1:before, .kanji_tips_contents h1:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  display: inline-block;
-  width: 44px;
-  height: 2px;
-  background-color: black;
-  transform: rotate(-60deg);
-}
-.kanji_tips_contents h1:before {
-  left: 0;
-}
-.kanji_tips_contents h1:after {
-  right: 0;
-}
-.kanji_tips_contents .kanji_tips_contents_panel {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 30px 1%;
-}
-.kanji_tips_contents .kanji_tips_contents_panel img {
-  width: 150px;
-  border-radius: 15px;
-  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
-}
-
-.kanji_lesson_discription {
-  width: 70%;
-  position: relative;
-  margin: 100px auto;
-  padding: 50px 40px;
-  border: solid 3px #303030;
-  border-radius: 8px;
-}
-.kanji_lesson_discription .box-title {
-  position: absolute;
-  display: inline-block;
-  top: -18px;
-  left: 40px;
-  padding: 0 9px;
-  line-height: 1;
-  font-size: 30px;
-  background-color: #f2f0ea;
-  color: #303030;
-  font-weight: bold;
-}
-.kanji_lesson_discription img {
-  display: block;
-  width: 50%;
-  margin: 20px auto 20px auto;
-  border-radius: 30px;
-}
-.kanji_lesson_discription p {
-  font-size: 1.4em;
-}
-.kanji_lesson_discription h1 {
-  position: relative;
-  padding: 0.6em;
-  background: #d8d6cd;
-}
-.kanji_lesson_discription h1:after {
-  position: absolute;
-  content: "";
-  top: 100%;
-  left: 30px;
-  border: 15px solid transparent;
-  border-top: 15px solid #d8d6cd;
-  width: 0;
-  height: 0;
-}
-
-.kanji_lesson_contents {
-  width: 70%;
-  margin: 0 auto 100px auto;
-  text-align: center;
-}
-.kanji_lesson_contents h1 {
-  position: relative;
-  display: inline-block;
-  padding: 0 45px;
-  margin: 50px auto;
-}
-.kanji_lesson_contents h1:before, .kanji_lesson_contents h1:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  display: inline-block;
-  width: 44px;
-  height: 2px;
-  background-color: black;
-  transform: rotate(-60deg);
-}
-.kanji_lesson_contents h1:before {
-  left: 0;
-}
-.kanji_lesson_contents h1:after {
-  right: 0;
-}
-.kanji_lesson_contents .kanji_lesson_contents_panel {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 30px 1%;
-}
-.kanji_lesson_contents .kanji_lesson_contents_panel img {
+.lesson_contents .lesson_contents_panel img {
   width: 150px;
   border-radius: 15px;
   box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);

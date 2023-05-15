@@ -2,15 +2,15 @@
 
 @section('content')
 
-<div class="kanji_lesson_discription">
+<div class="lesson_discription">
     <span class="box-title">漢字の練習</span>
     <img src="{{ asset('/img/site04/kanji_lesson.png') }}" alt="">
     <p>ここでは、漢字を部首/部分別に練習します。漢字を美しく書く3つのコツ「基本の点画をマスターする」「部首・部分の書き方をマスターする」「外枠イメージと点画のバランスをつかむ」に注意しながら、ゆっくり書いてみましょう。</p>
 </div>
 
-<div class="kanji_lesson_contents">
+<div class="lesson_contents">
     <h1 class="rei">部首/部分別 美しく書くコツ</h1>
-    <div class="kanji_lesson_contents_panel">
+    <div class="lesson_contents_panel">
       <img src="{{ asset('/img/site04/ぎょうにんべん.png') }}" alt="">
       <img src="{{ asset('/img/site04/てへん.png') }}" alt="">
       <img src="{{ asset('/img/site04/にんべん.png') }}" alt="">

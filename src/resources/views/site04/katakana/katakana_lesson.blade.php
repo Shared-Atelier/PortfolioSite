@@ -2,15 +2,15 @@
 
 @section('content')
 
-<div class="katakana_lesson_discription">
+<div class="lesson_discription">
     <span class="box-title">カタカナの練習</span>
     <img src="{{ asset('/img/site04/katakana_lesson.png') }}" alt="">
     <p>ここでは、カタカナを1文字ずつ練習します。カタカナを美しく書く3つのコツ「直線の長さや向きをバランスよく」「払い、はね、止めを意識する」「外枠の形をイメージする」に注意しながら、ゆっくり書いてみましょう。</p>
 </div>
 
-<div class="katakana_lesson_contents">
+<div class="lesson_contents">
     <h1>カタカナ別 美しく書くコツ</h1>
-    <div class="hiragana_lesson_contents_panel">
+    <div class="lesson_contents_panel">
       <img src="{{ asset('/img/site04/ア.png') }}" alt="">
       <img src="{{ asset('/img/site04/イ.png') }}" alt="">
       <img src="{{ asset('/img/site04/ウ.png') }}" alt="">
