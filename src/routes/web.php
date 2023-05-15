@@ -40,7 +40,36 @@ Route::get('/site02', function () {
     return view('site02.index');
 })->name('index02');
 
+Route::get('/index', 'App\Http\Controllers\site02\IndexController@showSite00')->name('index00');
+Route::get('/site01', 'App\Http\Controllers\site02\IndexController@showSite01')->name('index01');
+Route::get('/site02', 'App\Http\Controllers\site02\IndexController@showSite02')->name('index02');
+Route::get('/site03', 'App\Http\Controllers\site02\IndexController@showSite03')->name('index03');
+Route::get('/site04', 'App\Http\Controllers\site02\IndexController@showSite04')->name('index04');
+
 //Site03
 Route::get('/site03', function () {
     return view('site03.index');
 })->name('index03');
+
+Route::get('/index', 'App\Http\Controllers\site03\IndexController@showSite00')->name('index00');
+Route::get('/site01', 'App\Http\Controllers\site03\IndexController@showSite01')->name('index01');
+Route::get('/site02', 'App\Http\Controllers\site03\IndexController@showSite02')->name('index02');
+Route::get('/site03', 'App\Http\Controllers\site03\IndexController@showSite03')->name('index03');
+Route::get('/site04', 'App\Http\Controllers\site03\IndexController@showSite04')->name('index04');
+
+//Site04
+Route::get('/site04', function () {
+    return view('site04.index');
+})->name('index04');
+
+Route::get('/site04/hiragana_tips', 'App\Http\Controllers\site04\IndexController@showHiraganaTips')->name('hiragana_tips');
+Route::get('/site04/hiragana_lesson', 'App\Http\Controllers\site04\IndexController@showHiraganaLesson')->name('hiragana_lesson');
+Route::get('/site04/katakana_tips', 'App\Http\Controllers\site04\IndexController@showKatakanaTips')->name('katakana_tips');
+Route::get('/site04/katakana_lesson', 'App\Http\Controllers\site04\IndexController@showKatakanaLesson')->name('katakana_lesson');
+Route::get('/site04/kanji_tips', 'App\Http\Controllers\site04\IndexController@showKanjiTips')->name('kanji_tips');
+Route::get('/site04/kanji_lesson', 'App\Http\Controllers\site04\IndexController@showKanjiLesson')->name('kanji_lesson');
+Route::get('/site04/pen', 'App\Http\Controllers\site04\IndexController@showPen')->name('pen');
+Route::get('/site04/paper', 'App\Http\Controllers\site04\IndexController@showPaper')->name('paper');
+Route::get('/site04/posture', 'App\Http\Controllers\site04\IndexController@showPosture')->name('posture');
+Route::get('/site04/first', 'App\Http\Controllers\site04\IndexController@showFirst')->name('first');
+Route::get('/site04/contact', 'App\Http\Controllers\site04\IndexController@showContact')->name('contact');
