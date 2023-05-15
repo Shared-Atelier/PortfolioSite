@@ -32,6 +32,12 @@
          <div class="caption">PORTFOLIOSITE</div>
       </div></a>
    </div>
+   <div class="item5">
+      <a href="{{ route('index04') }}" target="blank"><img src="/img/site03/site04.png" alt="">
+      <div class="mask">
+         <div class="caption">美文字練習帳</div>
+      </div></a>
+   </div>
 </div>
 
 

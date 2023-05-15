@@ -23,4 +23,8 @@ class IndexController extends Controller
     {
         return view('site03.index');
     }
+    public function showSite04()
+    {
+        return view('site04.index');
+    }
 }

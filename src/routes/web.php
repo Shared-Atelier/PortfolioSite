@@ -44,6 +44,7 @@ Route::get('/index', 'App\Http\Controllers\site02\IndexController@showSite00')->
 Route::get('/site01', 'App\Http\Controllers\site02\IndexController@showSite01')->name('index01');
 Route::get('/site02', 'App\Http\Controllers\site02\IndexController@showSite02')->name('index02');
 Route::get('/site03', 'App\Http\Controllers\site02\IndexController@showSite03')->name('index03');
+Route::get('/site04', 'App\Http\Controllers\site02\IndexController@showSite04')->name('index04');
 
 //Site03
 Route::get('/site03', function () {
@@ -54,6 +55,7 @@ Route::get('/index', 'App\Http\Controllers\site03\IndexController@showSite00')->
 Route::get('/site01', 'App\Http\Controllers\site03\IndexController@showSite01')->name('index01');
 Route::get('/site02', 'App\Http\Controllers\site03\IndexController@showSite02')->name('index02');
 Route::get('/site03', 'App\Http\Controllers\site03\IndexController@showSite03')->name('index03');
+Route::get('/site04', 'App\Http\Controllers\site03\IndexController@showSite04')->name('index04');
 
 //Site04
 Route::get('/site04', function () {
