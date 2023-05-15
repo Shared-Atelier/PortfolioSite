@@ -66,3 +66,8 @@ Route::get('/site04/katakana_tips', 'App\Http\Controllers\site04\IndexController
 Route::get('/site04/katakana_lesson', 'App\Http\Controllers\site04\IndexController@showKatakanaLesson')->name('katakana_lesson');
 Route::get('/site04/kanji_tips', 'App\Http\Controllers\site04\IndexController@showKanjiTips')->name('kanji_tips');
 Route::get('/site04/kanji_lesson', 'App\Http\Controllers\site04\IndexController@showKanjiLesson')->name('kanji_lesson');
+Route::get('/site04/pen', 'App\Http\Controllers\site04\IndexController@showPen')->name('pen');
+Route::get('/site04/paper', 'App\Http\Controllers\site04\IndexController@showPaper')->name('paper');
+Route::get('/site04/posture', 'App\Http\Controllers\site04\IndexController@showPosture')->name('posture');
+Route::get('/site04/first', 'App\Http\Controllers\site04\IndexController@showFirst')->name('first');
+Route::get('/site04/contact', 'App\Http\Controllers\site04\IndexController@showContact')->name('contact');

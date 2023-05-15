@@ -333,6 +333,10 @@ nav {
         border-radius: 30px;
     }
 
+    .marker {
+        border-bottom: dotted 8px #fec464;
+    }
+
     p {
         font-size: 1.4em;
     }
@@ -500,3 +504,50 @@ nav {
     }    
 }
 
+// contact form
+
+form {
+    width: 90%;
+    margin: 3% auto;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 0.3rem;
+    background: #d8d6cd;
+    color: #303030;
+
+    &[type=submit] {
+        background: #fec464;
+        color: #fff;
+        width: 100px;
+        text-align: center;
+    }
+
+    &::placeholder {
+        color: darken(#f9f9f9, 50%);
+    }
+
+    &.error {
+        background: red;
+        color: #fff;
+        &::placeholder {
+            color: darken(red, 60%);
+        }
+    }
+}
+
+textarea {
+    height: 10rem;
+}
+
+
+/////////////// footer ///////////////
+
+.container-footer-text {
+    text-align: center;
+}

@@ -296,6 +296,9 @@ nav li.has-child ul ul li a:active {
   margin: 20px auto;
   border-radius: 30px;
 }
+.tips_discription .marker {
+  border-bottom: dotted 8px #fec464;
+}
 .tips_discription p {
   font-size: 1.4em;
 }
@@ -434,4 +437,50 @@ nav li.has-child ul ul li a:active {
   width: 150px;
   border-radius: 15px;
   box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  width: 90%;
+  margin: 3% auto;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 0.3rem;
+  background: #d8d6cd;
+  color: #303030;
+}
+input[type=submit], textarea[type=submit] {
+  background: #fec464;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #7a7a7a;
+}
+input::placeholder, textarea::placeholder {
+  color: #7a7a7a;
+}
+input.error, textarea.error {
+  background: red;
+  color: #fff;
+}
+input.error::-moz-placeholder, textarea.error::-moz-placeholder {
+  color: black;
+}
+input.error::placeholder, textarea.error::placeholder {
+  color: black;
+}
+
+textarea {
+  height: 10rem;
+}
+
+.container-footer-text {
+  text-align: center;
 }/*# sourceMappingURL=app.css.map */

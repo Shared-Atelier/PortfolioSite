@@ -9,7 +9,7 @@
 </div>
 
 <div class="lesson_contents">
-    <h1 class="rei">部首/部分別 美しく書くコツ</h1>
+    <h1 class="rei">部首・部分別 美しく書くコツ</h1>
     <div class="lesson_contents_panel">
       <img src="{{ asset('/img/site04/ぎょうにんべん.png') }}" alt="">
       <img src="{{ asset('/img/site04/てへん.png') }}" alt="">

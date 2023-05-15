@@ -31,4 +31,24 @@ class IndexController extends Controller
     {
         return view('site04.kanji.kanji_lesson');
     }
+    public function showPen()
+    {
+        return view('site04.stationery.pen');
+    }
+    public function showPaper()
+    {
+        return view('site04.stationery.paper');
+    }
+    public function showPosture()
+    {
+        return view('site04.stationery.posture');
+    }
+    public function showFirst()
+    {
+        return view('site04.about.first');
+    }
+    public function showContact()
+    {
+        return view('site04.about.contact');
+    }
 }

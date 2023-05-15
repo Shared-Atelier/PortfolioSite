@@ -37,16 +37,15 @@
                 </li>
                 <li class="has-child"><a href="#">筆記具の基礎知識</a>
                     <ul>
-                        <li><a href="#">ペンの種類と特徴</a></li>
-                        <li><a href="#">紙と下敷き</a></li>
-                        <li><a href="#">ペンの持ち方と姿勢</a></li>
+                        <li><a href="{{ route('pen') }}">ペンの種類と特徴</a></li>
+                        <li><a href="{{ route('paper') }}">紙と下敷き</a></li>
+                        <li><a href="{{ route('posture') }}">ペンの持ち方と姿勢</a></li>
                     </ul>
                 </li>
                 <li class="has-child"><a href="#">このサイトについて</a>
                     <ul>
-                        <li><a href="#">はじめに</a></li>
-                        <li><a href="#">本サイトについて</a></li>
-                        <li><a href="#">お問い合わせ</a></li>
+                        <li><a href="{{ route('first') }}">はじめに</a></li>
+                        <li><a href="{{ route('contact') }}">お問い合わせ</a></li>
                     </ul>
                 </li>
             </ul>
