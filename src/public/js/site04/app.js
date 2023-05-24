@@ -28,3 +28,4 @@ function mediaQueriesWin(){
     mediaQueriesWin();/* ドロップダウンの関数を呼ぶ*/
   });
   
+// modal

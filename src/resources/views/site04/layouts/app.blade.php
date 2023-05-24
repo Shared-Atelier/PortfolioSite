@@ -14,7 +14,7 @@
             <link rel="stylesheet" href="{{ asset('/css/site04/loading.css') }}" type="text/css">
             <!-- tab -->
             <link rel="stylesheet" type="text/css" href="{{ asset('css/site04/tab.css') }}">
-            <!-- background -->
+            
         </head>
 
         <body>
@@ -41,5 +41,8 @@
             <script src="{{ asset('js/site04/tab.js') }}"></script>
             <!-- jQuery -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            <!-- modal -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="{{ asset('/js/site04/main.js') }}"></script>
         </body>
     </html>
