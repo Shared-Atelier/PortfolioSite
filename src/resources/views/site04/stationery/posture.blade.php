@@ -4,7 +4,7 @@
 
 <div class="tips_discription">
     <span class="box-title">ペンの持ち方と姿勢</span>
-    <!-- <img src="{{ asset('/img/site04/kanji_tips.png') }}" alt=""> -->
+    <img src="{{ asset('/img/site04/grip.png') }}" alt="" style="width: 500px; display: block; margin: 0 auto;">
     <h2>ペンの持ち方</h2>
     <p>ペンの先から3cmくらいのところを、親指、人差し指、中指で挟むようにして持ちます。力を入れると、手や腕を自由に動かせなくなり、滑らかな線が書けなくなるので注意しましょう。
     </p>

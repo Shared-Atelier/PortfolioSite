@@ -9,12 +9,12 @@
 </div>
 
 <div class="tips_contents">
-    <h1>ひらがなを美しく書く3つのコツ</h1>
+    <h1>漢字を美しく書く3つのコツ</h1>
     <div class="tips_contents_panel">
-        <img src="{{ asset('/img/site04/コツ6.png') }}" alt="">
-        <img src="{{ asset('/img/site04/コツ7.png') }}" alt="">
-        <img src="{{ asset('/img/site04/コツ8.png') }}" alt="">
-        <img src="{{ asset('/img/site04/ワンポイントレッスン1.png') }}" alt="">
+        <a href="{{ route('kanji_tips1') }}"><img src="{{ asset('/img/site04/コツ6.png') }}" alt=""></a>
+        <a href="{{ route('kanji_tips2') }}"><img src="{{ asset('/img/site04/コツ7.png') }}" alt=""></a>
+        <a href="{{ route('kanji_tips3') }}"><img src="{{ asset('/img/site04/コツ8.png') }}" alt=""></a>
+        <a href="{{ route('kanji_point1') }}"><img src="{{ asset('/img/site04/ワンポイントレッスン1.png') }}" alt=""></a>
     </div>
 </div>
 

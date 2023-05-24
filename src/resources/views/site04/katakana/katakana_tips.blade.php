@@ -11,10 +11,10 @@
 <div class="tips_contents">
     <h1>カタカナを美しく書く3つのコツ</h1>
     <div class="tips_contents_panel">
-        <img src="{{ asset('/img/site04/コツ4.png') }}" alt="">
-        <img src="{{ asset('/img/site04/コツ5.png') }}" alt="">
-        <img src="{{ asset('/img/site04/コツ3.png') }}" alt="">
-        <img src="{{ asset('/img/site04/ワンポイントレッスン1.png') }}" alt="">
+        <a href="{{ route('katakana_tips1') }}"><img src="{{ asset('/img/site04/コツ4.png') }}" alt=""></a>
+        <a href="{{ route('katakana_tips2') }}"><img src="{{ asset('/img/site04/コツ5.png') }}" alt=""></a>
+        <a href="{{ route('katakana_tips3') }}"><img src="{{ asset('/img/site04/コツ3.png') }}" alt=""></a>
+        <a href=""><img src="{{ asset('/img/site04/ワンポイントレッスン1.png') }}" alt=""></a>
     </div>
 </div>
 
