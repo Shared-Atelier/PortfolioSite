@@ -1,0 +1,60 @@
+.index-menu {
+    margin-bottom: 100px;
+}
+
+/*tabの形状*/
+.tab {
+	display: flex;
+	flex-wrap: wrap;
+    padding: 0 25px;
+}
+.tab li {
+    list-style: none;
+    width: calc(100% / 3);
+    /* border-bottom: solid 2.4px #303030; */
+    
+}
+.tab li a {
+	display: block;
+	background: #d9d6cd;
+	margin: 0 2px;
+	padding: 10px 20px;
+    color: #303030;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: solid 2.4px #303030;
+}
+/*liにactiveクラスがついた時の形状*/
+.tab li.active a {
+	background: #fec464;
+    border-top: solid 2.4px #303030;
+    border-left: solid 2.4px #303030;
+    border-right: solid 2.4px #303030;
+    border-bottom: initial;
+}
+
+
+/*エリアの表示非表示と形状*/
+.area {
+	display: none;/*はじめは非表示*/
+	opacity: 0;/*透過0*/
+	background: #f2f0ea;
+	padding: 50px 20px;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+    display: block;/*表示*/
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
