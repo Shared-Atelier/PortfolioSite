@@ -3,8 +3,8 @@
 @section('content')
 
 <div class="hero_container">
-  <img src="{{ asset('/img/Site04/hero.png') }}" alt="" class="hero">
-  <img src="{{ asset('/img/site04/hero_sub.png') }}" alt="" class="hero_sub">
+  <img src="{{ asset('/img/site04/hero.png') }}" alt="" class="hero">
+  <img src="{{ asset('/img/site04/hero_.png') }}" alt="" class="hero_sub">
   <div class="circle"></div>
 </div>
 

@@ -9,7 +9,7 @@
 <div class="saishi fadeUpTrigger">
     <div class="saishi_pic">
         <div class="img">
-            <img src="/img/site01/saishi.png" alt="">
+            <img src="/img/site01/syunin_saishi.png" alt="">
         </div>
         <div class="text">
             <p class="label">主任祭司</p>

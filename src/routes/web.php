@@ -19,7 +19,15 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
-Route::get('/contact/contact', 'App\Http\Controllers\ContactController@showContact')->name('contact');
+// Route::get('/contact/contact', 'App\Http\Controllers\ContactController@showContact')->name('contact');
+
+// Mail
+// 入力ページ
+Route::get('/contact', 'App\Http\Controllers\ContactController@index')->name('contact.index');
+// 確認ページ
+Route::post('/contact/confirm', 'App\Http\Controllers\ContactController@confirm')->name('contact.confirm');
+// 送信完了ページ
+Route::post('/contact/thanks', 'App\Http\Controllers\ContactController@send')->name('contact.send');
 
 
 // Site01
@@ -89,4 +97,10 @@ Route::get('/site04/paper', 'App\Http\Controllers\site04\IndexController@showPap
 Route::get('/site04/posture', 'App\Http\Controllers\site04\IndexController@showPosture')->name('posture');
 
 Route::get('/site04/first', 'App\Http\Controllers\site04\IndexController@showFirst')->name('first');
-Route::get('/site04/contact', 'App\Http\Controllers\site04\IndexController@showContact')->name('contact');
+Route::get('/site04/contact04', 'App\Http\Controllers\site04\IndexController@showContact')->name('contact04');
+
+
+// Site05
+Route::get('/site05', function () {
+    return view('site05.index');
+})->name('index05');

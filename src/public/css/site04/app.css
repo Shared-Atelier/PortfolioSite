@@ -5,6 +5,12 @@ body {
   font-family: 筑紫A丸ゴシック, sans-serif;
   font-weight: 500;
   font-style: normal;
+  font-size: 15px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
 }
 
 .logo {
@@ -143,38 +149,9 @@ nav li.has-child ul ul li a:active {
   background: #fec464;
 }
 
-/*==768px以下の形状*/
 @media screen and (max-width: 768px) {
   nav {
-    padding: 0;
-  }
-  nav ul {
-    display: block;
-  }
-  nav li.has-child ul,
-  nav li.has-child ul ul {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-    visibility: visible; /*JSで制御するため一旦表示*/
-    opacity: 1; /*JSで制御するため一旦表示*/
-    display: none; /*JSのslidetoggleで表示させるため非表示に*/
-    transition: none; /*JSで制御するためCSSのアニメーションを切る*/
-  }
-  nav ul li a {
-    border-bottom: 1px solid #303030;
-  }
-  /*矢印の位置と向き*/
-  nav ul li.has-child::before {
-    left: 20px;
-  }
-  nav ul ul li.has-child::before {
-    transform: rotate(135deg);
-    left: 20px;
-  }
-  nav ul li.has-child.active::before {
-    transform: rotate(-45deg);
+    display: none;
   }
 }
 .hero_container {
@@ -184,13 +161,20 @@ nav li.has-child ul ul li a:active {
 }
 .hero_container .hero {
   height: 300px;
-  margin: 150px auto 150px auto;
+  margin: 150px auto;
 }
 .hero_container .hero_sub {
   width: 200px;
   position: absolute;
   right: 10%;
   top: 50%;
+}
+@media screen and (max-width: 768px) {
+  .hero_container .hero_sub {
+    width: 100px;
+    right: 10%;
+    top: 80%;
+  }
 }
 .hero_container .circle {
   position: absolute;
@@ -240,10 +224,20 @@ nav li.has-child ul ul li a:active {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 30px 1%;
 }
+@media screen and (max-width: 768px) {
+  .index_hiragana {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  }
+}
 .index_hiragana img {
   width: 150px;
   border-radius: 15px;
   box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 768px) {
+  .index_hiragana img {
+    width: 70px;
+  }
 }
 .index_hiragana h1 {
   font-size: 60px;
@@ -254,10 +248,20 @@ nav li.has-child ul ul li a:active {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 30px 1%;
 }
+@media screen and (max-width: 768px) {
+  .index_katakana {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  }
+}
 .index_katakana img {
   width: 150px;
   border-radius: 15px;
   box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 768px) {
+  .index_katakana img {
+    width: 70px;
+  }
 }
 
 .index_kanji {
@@ -265,10 +269,20 @@ nav li.has-child ul ul li a:active {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 30px 1%;
 }
+@media screen and (max-width: 768px) {
+  .index_kanji {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  }
+}
 .index_kanji img {
   width: 150px;
   border-radius: 15px;
   box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 768px) {
+  .index_kanji img {
+    width: 70px;
+  }
 }
 
 .tips_discription {
@@ -291,10 +305,30 @@ nav li.has-child ul ul li a:active {
   color: #303030;
   font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+  .tips_discription .box-title {
+    left: 20px;
+    top: -9px;
+    font-size: 15px;
+  }
+}
 .tips_discription img {
   width: 100%;
   margin: 20px auto;
   border-radius: 30px;
+}
+.tips_discription .kanji_tips {
+  width: 100%;
+}
+.tips_discription .kanji_tips_content {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .tips_discription .kanji_tips_content {
+    width: 70%;
+  }
 }
 .tips_discription .marker {
   border-bottom: dotted 8px #fec464;
@@ -350,10 +384,20 @@ nav li.has-child ul ul li a:active {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 30px 1%;
 }
+@media screen and (max-width: 768px) {
+  .tips_contents .tips_contents_panel {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  }
+}
 .tips_contents .tips_contents_panel img {
   width: 150px;
   border-radius: 15px;
   box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 768px) {
+  .tips_contents .tips_contents_panel img {
+    width: 70px;
+  }
 }
 
 .lesson_discription {
@@ -375,6 +419,13 @@ nav li.has-child ul ul li a:active {
   background-color: #f2f0ea;
   color: #303030;
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .lesson_discription .box-title {
+    top: -9px;
+    left: 20px;
+    font-size: 15px;
+  }
 }
 .lesson_discription img {
   display: block;
@@ -421,6 +472,13 @@ nav li.has-child ul ul li a:active {
   color: #303030;
   font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+  .lesson_discription_contents .box-title {
+    top: -9px;
+    left: 20px;
+    font-size: 15px;
+  }
+}
 .lesson_discription_contents img {
   display: block;
   width: 50%;
@@ -460,10 +518,20 @@ nav li.has-child ul ul li a:active {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 30px 1%;
 }
+@media screen and (max-width: 768px) {
+  .lesson_contents .lesson_contents_panel {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  }
+}
 .lesson_contents .lesson_contents_panel img {
   width: 150px;
   border-radius: 15px;
   box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 768px) {
+  .lesson_contents .lesson_contents_panel img {
+    width: 70px;
+  }
 }
 
 form {
