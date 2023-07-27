@@ -45,7 +45,7 @@
                 <li class="has-child"><a href="#">このサイトについて</a>
                     <ul>
                         <li><a href="{{ route('first') }}">はじめに</a></li>
-                        <li><a href="{{ route('contact') }}">お問い合わせ</a></li>
+                        <li><a href="{{ route('contact04') }}">お問い合わせ</a></li>
                     </ul>
                 </li>
             </ul>

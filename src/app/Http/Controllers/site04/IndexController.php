@@ -115,6 +115,6 @@ class IndexController extends Controller
     }
     public function showContact()
     {
-        return view('site04.about.contact');
+        return view('site04.about.contact04');
     }
 }

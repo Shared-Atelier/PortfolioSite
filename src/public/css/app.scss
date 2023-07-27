@@ -508,8 +508,10 @@ body {
     text-align: center;
     position: relative;
 
-    p {
+    .label {
+      display: block;
       margin-top: 50px;
+      margin-bottom: 10px;
       text-align: left;
     }
 
@@ -575,6 +577,22 @@ body {
     resize: none;
 
   }
+}
+
+.confirm {
+  width: 60%;
+  margin-top: 300px auto 300px auto;
+
+  label {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.send_thanks {
+  position: absolute;
+  top: 45%;
+  left: 45%;
 }
 
 // END Contact contact //

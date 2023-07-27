@@ -428,8 +428,10 @@ body .splash {
   text-align: center;
   position: relative;
 }
-.contact-form-wrapper .form-item p {
+.contact-form-wrapper .form-item .label {
+  display: block;
   margin-top: 50px;
+  margin-bottom: 10px;
   text-align: left;
 }
 .contact-form-wrapper .form-item .input {
@@ -488,6 +490,21 @@ body .splash {
 .contact-form-wrapper .input, .contact-form-wrapper .textarea {
   width: 100%;
   resize: none;
+}
+
+.confirm {
+  width: 60%;
+  margin-top: 300px auto 300px auto;
+}
+.confirm label {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.send_thanks {
+  position: absolute;
+  top: 45%;
+  left: 45%;
 }
 
 .container-footer {

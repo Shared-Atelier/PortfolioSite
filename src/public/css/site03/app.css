@@ -11,9 +11,14 @@ body {
   text-align: center;
   margin: 100px 0;
 }
+@media screen and (max-width: 768px) {
+  .hero-text p {
+    font-size: smaller;
+  }
+}
 
 .content {
-  margin-bottom: 100px;
+  padding-bottom: 300px;
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -167,4 +172,8 @@ body {
 }
 .content .item5:hover .mask {
   opacity: 1;
+}
+
+.container-footer-text {
+  text-align: center;
 }/*# sourceMappingURL=app.css.map */

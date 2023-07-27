@@ -6,6 +6,11 @@ body {
     font-family: 筑紫A丸ゴシック, sans-serif;
     font-weight: 500;
     font-style: normal;
+    font-size: 15px;
+    @media screen and (max-width:768px) {
+      font-size: 10px;
+    }
+    
 }
 
 // modal
@@ -156,50 +161,13 @@ nav {
     background: #fec464;
   }
 
-  /*==768px以下の形状*/
-  
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     nav {
-      padding: 0;
+      display: none;
     }
-    
-    nav ul {
-      display: block;
-    }
-    
-    nav li.has-child ul,
-    nav li.has-child ul ul {
-        position: relative;
-        left: 0;
-        top: 0;
-        width: 100%;
-        visibility: visible;/*JSで制御するため一旦表示*/
-        opacity: 1;/*JSで制御するため一旦表示*/
-        display: none;/*JSのslidetoggleで表示させるため非表示に*/
-        transition: none;/*JSで制御するためCSSのアニメーションを切る*/
-  }
-    
-  nav ul li a {
-    border-bottom: 1px solid #303030;
-  }
-  
-  /*矢印の位置と向き*/
-  
-  nav ul li.has-child::before {
-    left: 20px;  
-  }
-  
-  nav ul ul li.has-child::before {
-    transform: rotate(135deg);
-    left: 20px;
-  }
-      
-  nav ul li.has-child.active::before {
-      transform: rotate(-45deg);
-  }
-  
   }
 
+  
 /////////////// index ///////////////
 
 // hero
@@ -211,7 +179,7 @@ nav {
     
     .hero {
         height: 300px;
-        margin: 150px auto 150px auto;
+        margin: 150px auto;
     }
 
     .hero_sub {
@@ -219,6 +187,12 @@ nav {
         position: absolute;
         right: 10%;
         top: 50%;
+
+        @media screen and (max-width: 768px) {
+          width: 100px;
+          right: 10%;
+          top: 80%;
+        }
     }
 
     .circle {
@@ -263,6 +237,8 @@ nav {
             }
         }
     }
+
+    
 }
 
 // index_hiragana
@@ -272,10 +248,17 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 30px 1%;
 
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    }
+
     img {
         width: 150px;
         border-radius: 15px;
         box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+        @media screen and (max-width: 768px) {
+          width: 70px;
+        }
     }
     h1 {
         font-size: 60px;
@@ -287,10 +270,17 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 30px 1%;
 
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    }
+
     img {
         width: 150px;
         border-radius: 15px;
         box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+        @media screen and (max-width:768px) {
+          width: 70px;
+        }
     }
 }
 
@@ -299,10 +289,17 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 30px 1%;
 
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    }
+
     img {
         width: 150px;
         border-radius: 15px;
         box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+        @media screen and (max-width:768px) {
+          width: 70px;
+        }
     }
 }
 
@@ -329,12 +326,30 @@ nav {
         background-color: #f2f0ea;
         color: #303030;
         font-weight: bold;
+        @media screen and (max-width: 768px) {
+          left: 20px;
+          top: -9px;
+          font-size: 15px;
+        }
     }
 
     img {
         width: 100%;
         margin: 20px auto;
         border-radius: 30px;
+    }
+
+    .kanji_tips {
+      width: 100%;
+    }
+
+    .kanji_tips_content {
+      width: 50%;
+      display: block;
+      margin: 0 auto;
+      @media screen and (max-width: 768px) {
+        width: 70%;
+      }
     }
 
     .marker {
@@ -401,10 +416,17 @@ nav {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 30px 1%;
     
+        @media screen and (max-width: 768px) {
+          grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+        }
+
         img {
             width: 150px;
             border-radius: 15px;
             box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+            @media screen and (max-width:768px) {
+              width: 70px;
+            }
         }
     }    
 }
@@ -430,6 +452,11 @@ nav {
         background-color: #f2f0ea;
         color: #303030;
         font-weight: bold;
+        @media screen and (max-width: 768px) {
+          top: -9px;
+          left: 20px;
+          font-size: 15px;
+        }
     }
 
     img {
@@ -481,6 +508,11 @@ nav {
       background-color: #f2f0ea;
       color: #303030;
       font-weight: bold;
+      @media screen and (max-width:768px) {
+        top: -9px;
+        left: 20px;
+        font-size: 15px;
+      }
   }
 
   img {
@@ -529,11 +561,17 @@ nav {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 30px 1%;
+        @media screen and (max-width:768px) {
+          grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+        }
     
         img {
             width: 150px;
             border-radius: 15px;
             box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+            @media screen and (max-width:768px) {
+              width: 70px;
+            }
         }
     }    
 }
