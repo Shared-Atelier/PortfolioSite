@@ -16,7 +16,7 @@ body {
 }
 .header__logo a img {
   height: 40px;
-  margin: 10px 80px;
+  margin: 10px 10px;
 }
 
 .main_container {
@@ -27,8 +27,13 @@ body {
   margin-top: 200px;
   text-align: center;
   color: #303030;
-  font-size: 40px;
+  font-size: 100px;
   font-family: "Sacramento", cursive;
+}
+@media screen and (max-width: 768px) {
+  .main_container .title {
+    font-size: 30px;
+  }
 }
 
 .content {

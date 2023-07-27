@@ -4,7 +4,7 @@
 
 <div class="main_container">
   <div class="title">
-      <h1>banner</h1>
+      <p>banner</p>
   </div>
 
   <div class="content">
